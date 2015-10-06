@@ -1,0 +1,274 @@
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build'
+/bin/bash ../binutils-2.24/mkinstalldirs /cross-tools /cross-tools
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+make  install-recursive
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+Making install in doc
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd/doc'
+test -z "/cross-tools/share/info" || /bin/mkdir -p "/cross-tools/share/info"
+ /usr/bin/install -c -m 644 ../../../binutils-2.24/bfd/doc/bfd.info '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/bfd.info'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd/doc'
+Making install in po
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd/po'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+make[5]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+make[5]: Nothing to be done for 'install-exec-am'.
+test -z "" || /bin/mkdir -p ""
+test -z "" || /bin/mkdir -p ""
+make[5]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/bfd'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes'
+Making install in .
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes'
+make[4]: Nothing to be done for 'install-exec-am'.
+test -z "" || /bin/mkdir -p ""
+test -z "" || /bin/mkdir -p ""
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes'
+Making install in po
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes/po'
+make[3]: Nothing to be done for 'install'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes/po'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/opcodes'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+make  install-recursive
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+Making install in doc
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils/doc'
+make[5]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils/doc'
+make[5]: Nothing to be done for 'install-exec-am'.
+test -z "/cross-tools/share/info" || /bin/mkdir -p "/cross-tools/share/info"
+ /usr/bin/install -c -m 644 ../../../binutils-2.24/binutils/doc/binutils.info '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/binutils.info'
+test -z "/cross-tools/share/man/man1" || /bin/mkdir -p "/cross-tools/share/man/man1"
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/addr2line.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-addr2line.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/ar.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-ar.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/dlltool.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-dlltool.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/nlmconv.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-nlmconv.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/nm.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-nm.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/objcopy.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-objcopy.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/objdump.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-objdump.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/ranlib.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-ranlib.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/readelf.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-readelf.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/size.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-size.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/strings.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-strings.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/strip.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-strip.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/elfedit.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-elfedit.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/windres.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-windres.1'
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/binutils/doc/windmc.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-windmc.1'
+ /usr/bin/install -c -m 644 'c++filt.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-c++filt.1'
+make[5]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils/doc'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils/doc'
+Making install in po
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils/po'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+make[5]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+test -z "/cross-tools/bin" || /bin/mkdir -p "/cross-tools/bin"
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c size '/cross-tools/bin/./alphaev67-unknown-linux-gnu-size'
+libtool: install: /usr/bin/install -c size /cross-tools/bin/./alphaev67-unknown-linux-gnu-size
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c objdump '/cross-tools/bin/./alphaev67-unknown-linux-gnu-objdump'
+libtool: install: /usr/bin/install -c objdump /cross-tools/bin/./alphaev67-unknown-linux-gnu-objdump
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c ar '/cross-tools/bin/./alphaev67-unknown-linux-gnu-ar'
+libtool: install: /usr/bin/install -c ar /cross-tools/bin/./alphaev67-unknown-linux-gnu-ar
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c strings '/cross-tools/bin/./alphaev67-unknown-linux-gnu-strings'
+libtool: install: /usr/bin/install -c strings /cross-tools/bin/./alphaev67-unknown-linux-gnu-strings
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c ranlib '/cross-tools/bin/./alphaev67-unknown-linux-gnu-ranlib'
+libtool: install: /usr/bin/install -c ranlib /cross-tools/bin/./alphaev67-unknown-linux-gnu-ranlib
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c objcopy '/cross-tools/bin/./alphaev67-unknown-linux-gnu-objcopy'
+libtool: install: /usr/bin/install -c objcopy /cross-tools/bin/./alphaev67-unknown-linux-gnu-objcopy
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c addr2line '/cross-tools/bin/./alphaev67-unknown-linux-gnu-addr2line'
+libtool: install: /usr/bin/install -c addr2line /cross-tools/bin/./alphaev67-unknown-linux-gnu-addr2line
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c readelf '/cross-tools/bin/./alphaev67-unknown-linux-gnu-readelf'
+libtool: install: /usr/bin/install -c readelf /cross-tools/bin/./alphaev67-unknown-linux-gnu-readelf
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c elfedit '/cross-tools/bin/./alphaev67-unknown-linux-gnu-elfedit'
+libtool: install: /usr/bin/install -c elfedit /cross-tools/bin/./alphaev67-unknown-linux-gnu-elfedit
+test -z "/cross-tools/bin" || /bin/mkdir -p "/cross-tools/bin"
+ /bin/bash ./libtool  --mode=install /usr/bin/install -c nm-new /cross-tools/bin/alphaev67-unknown-linux-gnu-nm
+libtool: install: /usr/bin/install -c nm-new /cross-tools/bin/alphaev67-unknown-linux-gnu-nm
+ /bin/bash ./libtool  --mode=install /usr/bin/install -c strip-new /cross-tools/bin/alphaev67-unknown-linux-gnu-strip
+libtool: install: /usr/bin/install -c strip-new /cross-tools/bin/alphaev67-unknown-linux-gnu-strip
+ /bin/bash ./libtool  --mode=install /usr/bin/install -c cxxfilt /cross-tools/bin/alphaev67-unknown-linux-gnu-c++filt
+libtool: install: /usr/bin/install -c cxxfilt /cross-tools/bin/alphaev67-unknown-linux-gnu-c++filt
+/bin/bash ../../binutils-2.24/binutils/../mkinstalldirs /cross-tools/alphaev67-unknown-linux-gnu/bin
+mkdir -p -- /cross-tools/alphaev67-unknown-linux-gnu/bin
+for i in nm-new strip-new ar ranlib dlltool objdump objcopy; do \
+  if [ -f $i ]; then \
+    j=`echo $i | sed -e 's/-new//'`; \
+    k=`echo $j | sed 's&^&alphaev67-unknown-linux-gnu-&'`; \
+    if [ "/cross-tools/bin/$k" != "/cross-tools/alphaev67-unknown-linux-gnu/bin/$j" ]; then \
+      rm -f /cross-tools/alphaev67-unknown-linux-gnu/bin/$j; \
+      ln /cross-tools/bin/$k /cross-tools/alphaev67-unknown-linux-gnu/bin/$j >/dev/null 2>/dev/null \
+	|| /bin/bash ./libtool --mode=install /usr/bin/install -c $i /cross-tools/alphaev67-unknown-linux-gnu/bin/$j; \
+    fi; \
+  else true; \
+  fi; \
+done
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/binutils'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/etc'
+for f in standards.info configure.info; do \
+  if test -f ../../binutils-2.24/etc/`echo $f | sed -e 's/.info$/.texi/'`; then \
+    if make "MAKEINFO=makeinfo --split-size=5000000 --split-size=5000000" $f; then \
+      true; \
+    else \
+      exit 1; \
+    fi; \
+  fi; \
+done
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/etc'
+make[3]: '../../binutils-2.24/etc/standards.info' is up to date.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/etc'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/etc'
+make[3]: '../../binutils-2.24/etc/configure.info' is up to date.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/etc'
+/bin/bash ../../binutils-2.24/etc/../mkinstalldirs /cross-tools/share/info
+if test ! -f standards.info; then cd ../../binutils-2.24/etc; fi; \
+if test -f standards.info; then \
+  for i in standards.info*; do \
+    /usr/bin/install -c -m 644 $i /cross-tools/share/info/$i; \
+  done; \
+fi
+if test ! -f configure.info; then cd ../../binutils-2.24/etc; fi; \
+if test -f configure.info; then \
+  for i in configure.info*; do \
+    /usr/bin/install -c -m 644 $i /cross-tools/share/info/$i; \
+  done; \
+fi
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/etc'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas'
+Making install in doc
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas/doc'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+test -z "/cross-tools/share/info" || /bin/mkdir -p "/cross-tools/share/info"
+ /usr/bin/install -c -m 644 ../../../binutils-2.24/gas/doc/as.info '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/as.info'
+test -z "/cross-tools/share/man/man1" || /bin/mkdir -p "/cross-tools/share/man/man1"
+ /usr/bin/install -c -m 644 '../../../binutils-2.24/gas/doc/as.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-as.1'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas/doc'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas/doc'
+Making install in po
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas/po'
+make[3]: Nothing to be done for 'install'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas/po'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas'
+/bin/bash ../../binutils-2.24/gas/../mkinstalldirs /cross-tools/bin
+ /bin/bash ./libtool  --mode=install /usr/bin/install -c as-new /cross-tools/bin/alphaev67-unknown-linux-gnu-as
+libtool: install: /usr/bin/install -c as-new /cross-tools/bin/alphaev67-unknown-linux-gnu-as
+/bin/bash ../../binutils-2.24/gas/../mkinstalldirs /cross-tools/alphaev67-unknown-linux-gnu/bin
+n=`echo as | sed 's&^&alphaev67-unknown-linux-gnu-&'`; \
+if [ "/cross-tools/bin/$n" != "/cross-tools/alphaev67-unknown-linux-gnu/bin/as" ]; then \
+  rm -f /cross-tools/alphaev67-unknown-linux-gnu/bin/as; \
+  ln /cross-tools/bin/$n /cross-tools/alphaev67-unknown-linux-gnu/bin/as >/dev/null 2>/dev/null \
+    || /bin/bash ./libtool --mode=install /usr/bin/install -c as-new /cross-tools/alphaev67-unknown-linux-gnu/bin/as; \
+else \
+  true ; \
+fi
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gas'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+make  install-recursive
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+Making install in po
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof/po'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+make[5]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+test -z "/cross-tools/bin" || /bin/mkdir -p "/cross-tools/bin"
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c gprof '/cross-tools/bin/./alphaev67-unknown-linux-gnu-gprof'
+libtool: install: /usr/bin/install -c gprof /cross-tools/bin/./alphaev67-unknown-linux-gnu-gprof
+test -z "/cross-tools/share/info" || /bin/mkdir -p "/cross-tools/share/info"
+ /usr/bin/install -c -m 644 ../../binutils-2.24/gprof/gprof.info '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/gprof.info'
+test -z "/cross-tools/share/man/man1" || /bin/mkdir -p "/cross-tools/share/man/man1"
+ /usr/bin/install -c -m 644 '../../binutils-2.24/gprof/gprof.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-gprof.1'
+make[5]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/gprof'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/intl'
+make[2]: Nothing to be done for 'install'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/intl'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+make  install-recursive
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+Making install in po
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld/po'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+make[5]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+test -z "/cross-tools/bin" || /bin/mkdir -p "/cross-tools/bin"
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c ld-new '/cross-tools/bin/./alphaev67-unknown-linux-gnu-ld.bfd'
+libtool: install: /usr/bin/install -c ld-new /cross-tools/bin/./alphaev67-unknown-linux-gnu-ld.bfd
+/bin/bash ../../binutils-2.24/ld/../mkinstalldirs /cross-tools/alphaev67-unknown-linux-gnu/bin
+n=`echo ld.bfd | sed 's/^ld-new$/ld.bfd/;s&^&alphaev67-unknown-linux-gnu-&'`; \
+if test "/cross-tools/bin" != "/cross-tools/alphaev67-unknown-linux-gnu/bin"; then \
+  rm -f /cross-tools/alphaev67-unknown-linux-gnu/bin/ld.bfd; \
+  ln /cross-tools/bin/$n /cross-tools/alphaev67-unknown-linux-gnu/bin/ld.bfd >/dev/null 2>/dev/null \
+  || /bin/bash ./libtool --mode=install /usr/bin/install -c ld-new /cross-tools/alphaev67-unknown-linux-gnu/bin/ld.bfd; \
+fi; \
+if test "xyes" = "xyes"; then \
+  ld=`echo ld | sed 's/^ld-new$/ld.bfd/;s&^&alphaev67-unknown-linux-gnu-&'`; \
+  rm -f /cross-tools/bin/$ld; \
+  ln /cross-tools/bin/$n /cross-tools/bin/$ld >/dev/null 2>/dev/null \
+  || /bin/bash ./libtool --mode=install /usr/bin/install -c ld-new /cross-tools/bin/$ld; \
+  if test "/cross-tools/bin" != "/cross-tools/alphaev67-unknown-linux-gnu/bin"; then \
+    rm -f /cross-tools/alphaev67-unknown-linux-gnu/bin/ld; \
+    ln /cross-tools/bin/$n /cross-tools/alphaev67-unknown-linux-gnu/bin/ld >/dev/null 2>/dev/null \
+    || /bin/bash ./libtool --mode=install /usr/bin/install -c ld-new /cross-tools/alphaev67-unknown-linux-gnu/bin/ld; \
+  fi; \
+fi
+/bin/bash ../../binutils-2.24/ld/../mkinstalldirs /cross-tools/alphaev67-unknown-linux-gnu/lib/ldscripts
+mkdir -p -- /cross-tools/alphaev67-unknown-linux-gnu/lib/ldscripts
+for f in ldscripts/*; do \
+  /usr/bin/install -c -m 644 $f /cross-tools/alphaev67-unknown-linux-gnu/lib/$f ; \
+done
+test -z "/cross-tools/share/info" || /bin/mkdir -p "/cross-tools/share/info"
+ /usr/bin/install -c -m 644 ../../binutils-2.24/ld/ld.info '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/ld.info'
+test -z "/cross-tools/share/man/man1" || /bin/mkdir -p "/cross-tools/share/man/man1"
+ /usr/bin/install -c -m 644 '../../binutils-2.24/ld/ld.1' '/cross-tools/share/man/man1/alphaev67-unknown-linux-gnu-ld.1'
+make[5]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/ld'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/libiberty'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/libiberty/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/libiberty/testsuite'
+if test -n ""; then \
+	/bin/bash ../../binutils-2.24/libiberty/../mkinstalldirs /cross-tools/lib/`gcc -g -O2 -print-multi-os-directory`; \
+	/usr/bin/install -c -m 644 ./libiberty.a /cross-tools/lib/`gcc -g -O2 -print-multi-os-directory`/./libiberty.an; \
+	( cd /cross-tools/lib/`gcc -g -O2 -print-multi-os-directory` ; chmod 644 ./libiberty.an ;ranlib ./libiberty.an ); \
+	mv -f /cross-tools/lib/`gcc -g -O2 -print-multi-os-directory`/./libiberty.an /cross-tools/lib/`gcc -g -O2 -print-multi-os-directory`/./libiberty.a; \
+	case "" in \
+	  /*)    thd=;; \
+	  *)     thd=/cross-tools/include/;; \
+	esac; \
+	/bin/bash ../../binutils-2.24/libiberty/../mkinstalldirs ${thd}; \
+	for h in ../../binutils-2.24/libiberty/../include/ansidecl.h ../../binutils-2.24/libiberty/../include/demangle.h ../../binutils-2.24/libiberty/../include/dyn-string.h ../../binutils-2.24/libiberty/../include/fibheap.h ../../binutils-2.24/libiberty/../include/floatformat.h ../../binutils-2.24/libiberty/../include/hashtab.h ../../binutils-2.24/libiberty/../include/libiberty.h ../../binutils-2.24/libiberty/../include/objalloc.h ../../binutils-2.24/libiberty/../include/partition.h ../../binutils-2.24/libiberty/../include/safe-ctype.h ../../binutils-2.24/libiberty/../include/sort.h ../../binutils-2.24/libiberty/../include/splay-tree.h ../../binutils-2.24/libiberty/../include/timeval-utils.h; do \
+	  /usr/bin/install -c -m 644 $h ${thd}; \
+	done; \
+fi
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/libiberty/testsuite'
+make[3]: Nothing to be done for 'install'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/libiberty/testsuite'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build/libiberty'
+make[1]: Nothing to be done for 'install-target'.
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_14_binutils-2.24-build'

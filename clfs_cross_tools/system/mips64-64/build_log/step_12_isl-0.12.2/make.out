@@ -1,0 +1,99 @@
+make  all-recursive
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_12_isl-0.12.2-build'
+Making all in .
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_12_isl-0.12.2-build'
+  CC     libisl_la-isl_lp_no_piplib.lo
+  CC     libisl_la-isl_map_no_piplib.lo
+  CC     libisl_la-isl_sample_no_piplib.lo
+  CC     libisl_la-isl_aff.lo
+  CC     libisl_la-isl_affine_hull.lo
+  CC     libisl_la-isl_arg.lo
+  CC     libisl_la-isl_ast.lo
+  CC     libisl_la-isl_ast_build.lo
+  CC     libisl_la-isl_ast_build_expr.lo
+  CC     libisl_la-isl_ast_codegen.lo
+  CC     libisl_la-isl_ast_graft.lo
+  CC     libisl_la-isl_band.lo
+  CC     libisl_la-basis_reduction_tab.lo
+  CC     libisl_la-isl_bernstein.lo
+  CC     libisl_la-isl_blk.lo
+  CC     libisl_la-isl_bound.lo
+  CC     libisl_la-isl_coalesce.lo
+  CC     libisl_la-isl_constraint.lo
+  CC     libisl_la-isl_convex_hull.lo
+  CC     libisl_la-isl_ctx.lo
+  CC     libisl_la-isl_deprecated.lo
+  CC     libisl_la-isl_dim.lo
+  CC     libisl_la-isl_dim_map.lo
+  CC     libisl_la-isl_equalities.lo
+  CC     libisl_la-isl_factorization.lo
+  CC     libisl_la-isl_farkas.lo
+  CC     libisl_la-isl_flow.lo
+  CC     libisl_la-isl_fold.lo
+  CC     libisl_la-isl_gmp.lo
+  CC     libisl_la-isl_hash.lo
+  CC     libisl_la-isl_hmap_map_basic_set.lo
+  CC     libisl_la-isl_ilp.lo
+  CC     libisl_la-isl_input.lo
+  CC     libisl_la-isl_local_space.lo
+  CC     libisl_la-isl_lp.lo
+  CC     libisl_la-isl_map.lo
+  CC     libisl_la-isl_map_simplify.lo
+  CC     libisl_la-isl_map_subtract.lo
+  CC     libisl_la-isl_mat.lo
+  CC     libisl_la-isl_morph.lo
+  CC     libisl_la-isl_id.lo
+  CC     libisl_la-isl_obj.lo
+  CC     libisl_la-isl_options.lo
+  CC     libisl_la-isl_output.lo
+  CC     libisl_la-isl_point.lo
+  CC     libisl_la-isl_polynomial.lo
+  CC     libisl_la-isl_printer.lo
+  CC     libisl_la-print.lo
+  CC     libisl_la-isl_range.lo
+  CC     libisl_la-isl_reordering.lo
+  CC     libisl_la-isl_sample.lo
+  CC     libisl_la-isl_scan.lo
+  CC     libisl_la-isl_schedule.lo
+  CC     libisl_la-isl_set_list.lo
+  CC     libisl_la-isl_sort.lo
+  CC     libisl_la-isl_space.lo
+  CC     libisl_la-isl_stream.lo
+  CC     libisl_la-isl_seq.lo
+  CC     libisl_la-isl_tab.lo
+  CC     libisl_la-isl_tab_pip.lo
+  CC     libisl_la-isl_tarjan.lo
+  CC     libisl_la-isl_transitive_closure.lo
+  CC     libisl_la-isl_union_map.lo
+  CC     libisl_la-isl_val.lo
+  CC     libisl_la-isl_val_gmp.lo
+  CC     libisl_la-isl_vec.lo
+  CC     libisl_la-isl_version.lo
+  CC     libisl_la-isl_vertices.lo
+  CCLD   libisl.la
+  CC     isl_test-isl_test.o
+  CCLD   isl_test
+  CC     isl_polyhedron_sample-polyhedron_sample.o
+  CCLD   isl_polyhedron_sample
+  CC     isl_pip-pip.o
+  CCLD   isl_pip
+  CC     isl_polyhedron_minimize-polyhedron_minimize.o
+  CCLD   isl_polyhedron_minimize
+  CC     isl_polytope_scan-polytope_scan.o
+  CCLD   isl_polytope_scan
+  CC     isl_polyhedron_detect_equalities-polyhedron_detect_equalities.o
+  CCLD   isl_polyhedron_detect_equalities
+  CC     isl_cat-cat.o
+  CCLD   isl_cat
+  CC     isl_closure-closure.o
+  CCLD   isl_closure
+  CC     isl_bound-bound.o
+  CCLD   isl_bound
+  CC     isl_codegen-codegen.o
+  CCLD   isl_codegen
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_12_isl-0.12.2-build'
+Making all in doc
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_12_isl-0.12.2-build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_12_isl-0.12.2-build/doc'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_12_isl-0.12.2-build'

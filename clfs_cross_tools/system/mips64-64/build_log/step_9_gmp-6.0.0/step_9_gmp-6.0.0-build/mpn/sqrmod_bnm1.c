@@ -1,0 +1,1 @@
+../../gmp-6.0.0/mpn/generic/sqrmod_bnm1.c

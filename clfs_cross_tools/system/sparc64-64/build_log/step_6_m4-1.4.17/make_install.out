@@ -1,0 +1,91 @@
+make  install-recursive
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build'
+Making install in .
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build'
+Making install in examples
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/examples'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/examples'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/examples'
+Making install in lib
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/lib'
+make  install-am
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/lib'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/lib'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/bash /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/m4-1.4.17/build-aux/install-sh -d /cross-tools/lib ; \
+fi ; \
+if test -f /cross-tools/lib/charset.alias; then \
+  sed -f ref-add.sed /cross-tools/lib/charset.alias > /cross-tools/lib/charset.tmp ; \
+  /usr/bin/install -c -m 644 /cross-tools/lib/charset.tmp /cross-tools/lib/charset.alias ; \
+  rm -f /cross-tools/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /cross-tools/lib/charset.tmp ; \
+    /usr/bin/install -c -m 644 /cross-tools/lib/charset.tmp /cross-tools/lib/charset.alias ; \
+    rm -f /cross-tools/lib/charset.tmp ; \
+  fi ; \
+fi
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/lib'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/lib'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/lib'
+Making install in src
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/src'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/src'
+ /bin/mkdir -p '/cross-tools/bin'
+  /usr/bin/install -c m4 '/cross-tools/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/src'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/src'
+Making install in doc
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/doc'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/cross-tools/share/info'
+ /usr/bin/install -c -m 644 ../../m4-1.4.17/doc/m4.info ../../m4-1.4.17/doc/m4.info-1 ../../m4-1.4.17/doc/m4.info-2 '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/m4.info'
+ /bin/mkdir -p '/cross-tools/share/man/man1'
+ /usr/bin/install -c -m 644 ../../m4-1.4.17/doc/m4.1 '/cross-tools/share/man/man1'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/doc'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/doc'
+Making install in checks
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/checks'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/checks'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/checks'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/checks'
+Making install in tests
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+make  install-recursive
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+Making install in .
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+make[5]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build/tests'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_6_m4-1.4.17-build'

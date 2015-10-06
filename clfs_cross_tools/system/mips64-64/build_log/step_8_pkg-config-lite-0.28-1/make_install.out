@@ -1,0 +1,25 @@
+Making install in .
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+test -z "/cross-tools/bin" || /bin/mkdir -p "/cross-tools/bin"
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c pkg-config '/cross-tools/bin'
+libtool: install: /usr/bin/install -c pkg-config /cross-tools/bin/pkg-config
+make  install-exec-hook
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+cd /cross-tools/bin && ln pkg-config mips64el-unknown-linux-gnu-pkg-config
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+test -z "/cross-tools/share/doc/pkg-config" || /bin/mkdir -p "/cross-tools/share/doc/pkg-config"
+ /usr/bin/install -c -m 644 ../pkg-config-lite-0.28-1/pkg-config-guide.html '/cross-tools/share/doc/pkg-config'
+test -z "/cross-tools/share/aclocal" || /bin/mkdir -p "/cross-tools/share/aclocal"
+ /usr/bin/install -c -m 644 ../pkg-config-lite-0.28-1/pkg.m4 '/cross-tools/share/aclocal'
+test -z "/cross-tools/share/man/man1" || /bin/mkdir -p "/cross-tools/share/man/man1"
+ /usr/bin/install -c -m 644 ../pkg-config-lite-0.28-1/pkg-config.1 '/cross-tools/share/man/man1'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+Making install in check
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build/check'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build/check'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build/check'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build/check'

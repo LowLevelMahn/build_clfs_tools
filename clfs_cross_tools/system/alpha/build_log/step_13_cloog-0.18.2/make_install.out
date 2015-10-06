@@ -1,0 +1,60 @@
+Making install in .
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build'
+test -z "/cross-tools/lib" || /bin/mkdir -p "/cross-tools/lib"
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libcloog-isl.la '/cross-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libcloog-isl.so.4.0.0 /cross-tools/lib/libcloog-isl.so.4.0.0
+libtool: install: (cd /cross-tools/lib && { ln -s -f libcloog-isl.so.4.0.0 libcloog-isl.so.4 || { rm -f libcloog-isl.so.4 && ln -s libcloog-isl.so.4.0.0 libcloog-isl.so.4; }; })
+libtool: install: (cd /cross-tools/lib && { ln -s -f libcloog-isl.so.4.0.0 libcloog-isl.so || { rm -f libcloog-isl.so && ln -s libcloog-isl.so.4.0.0 libcloog-isl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcloog-isl.lai /cross-tools/lib/libcloog-isl.la
+libtool: finish: PATH="/cross-tools/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /cross-tools/lib
+/sbin/ldconfig.real: /cross-tools/lib/libisl.so.10.2.2-gdb.py is not an ELF file - it has the wrong magic bytes at the start.
+
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /cross-tools/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/cross-tools/bin" || /bin/mkdir -p "/cross-tools/bin"
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c cloog '/cross-tools/bin'
+libtool: install: /usr/bin/install -c .libs/cloog /cross-tools/bin/cloog
+/usr/bin/install -c -m 644 cloog-isl.pc "/cross-tools/lib/pkgconfig/cloog-isl.pc"
+test -z "/cross-tools/include/cloog" || /bin/mkdir -p "/cross-tools/include/cloog"
+ /usr/bin/install -c -m 644 ../cloog-0.18.2/include/cloog/block.h ../cloog-0.18.2/include/cloog/clast.h ../cloog-0.18.2/include/cloog/cloog.h ../cloog-0.18.2/include/cloog/input.h ../cloog-0.18.2/include/cloog/int.h ../cloog-0.18.2/include/cloog/matrix.h ../cloog-0.18.2/include/cloog/state.h ../cloog-0.18.2/include/cloog/domain.h ../cloog-0.18.2/include/cloog/loop.h ../cloog-0.18.2/include/cloog/constraints.h ../cloog-0.18.2/include/cloog/names.h ../cloog-0.18.2/include/cloog/options.h ../cloog-0.18.2/include/cloog/pprint.h ../cloog-0.18.2/include/cloog/program.h ../cloog-0.18.2/include/cloog/statement.h ../cloog-0.18.2/include/cloog/stride.h ../cloog-0.18.2/include/cloog/union_domain.h include/cloog/version.h '/cross-tools/include/cloog'
+test -z "/cross-tools/include/cloog/isl" || /bin/mkdir -p "/cross-tools/include/cloog/isl"
+ /usr/bin/install -c -m 644 ../cloog-0.18.2/include/cloog/isl/backend.h ../cloog-0.18.2/include/cloog/isl/cloog.h ../cloog-0.18.2/include/cloog/isl/domain.h ../cloog-0.18.2/include/cloog/isl/constraintset.h '/cross-tools/include/cloog/isl'
+test -z "/cross-tools/include/cloog/matrix" || /bin/mkdir -p "/cross-tools/include/cloog/matrix"
+ /usr/bin/install -c -m 644 ../cloog-0.18.2/include/cloog/matrix/constraintset.h '/cross-tools/include/cloog/matrix'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build'
+Making install in doc
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/doc'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/doc'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/doc'
+Making install in test
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/test'
+cd ..; make  libcloog-isl.la
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build'
+make[2]: 'libcloog-isl.la' is up to date.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/test'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_13_cloog-0.18.2-build/test'

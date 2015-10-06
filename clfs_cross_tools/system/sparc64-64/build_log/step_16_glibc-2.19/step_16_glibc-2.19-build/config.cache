@@ -1,0 +1,126 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs, see configure's option --config-cache.
+# It is not useful on other systems.  If it contains results you don't
+# want to keep, you may remove or edit it.
+#
+# config.status only pays attention to the cache file if you give it
+# the --recheck option to rerun configure.
+#
+# `ac_cv_env_foo' variables (set or unset) will be overridden when
+# loading this file, other *unset* `ac_cv_foo' will be assigned the
+# following values.
+
+ac_cv_build=${ac_cv_build=x86_64-unknown-linux-gnu}
+ac_cv_c_compiler_gnu=${ac_cv_c_compiler_gnu=yes}
+ac_cv_cxx_compiler_gnu=${ac_cv_cxx_compiler_gnu=yes}
+ac_cv_env_CCC_set=
+ac_cv_env_CCC_value=
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value='sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64'
+ac_cv_env_CFLAGS_set=
+ac_cv_env_CFLAGS_value=
+ac_cv_env_CPPFLAGS_set=
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_CPP_set=
+ac_cv_env_CPP_value=
+ac_cv_env_CXXFLAGS_set=
+ac_cv_env_CXXFLAGS_value=
+ac_cv_env_CXX_set=
+ac_cv_env_CXX_value=
+ac_cv_env_LDFLAGS_set=
+ac_cv_env_LDFLAGS_value=
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_build_alias_set=set
+ac_cv_env_build_alias_value=
+ac_cv_env_host_alias_set=set
+ac_cv_env_host_alias_value=sparc64-unknown-linux-gnu
+ac_cv_env_target_alias_set=
+ac_cv_env_target_alias_value=
+ac_cv_header_linux_fanotify_h=${ac_cv_header_linux_fanotify_h=yes}
+ac_cv_host=${ac_cv_host=sparc64-unknown-linux-gnu}
+ac_cv_lib_selinux_is_selinux_enabled=${ac_cv_lib_selinux_is_selinux_enabled=no}
+ac_cv_objext=${ac_cv_objext=o}
+ac_cv_path_BASH_SHELL=${ac_cv_path_BASH_SHELL=/bin/bash}
+ac_cv_path_BISON=${ac_cv_path_BISON=/usr/bin/bison}
+ac_cv_path_EGREP=${ac_cv_path_EGREP='/bin/grep -E'}
+ac_cv_path_GREP=${ac_cv_path_GREP=/bin/grep}
+ac_cv_path_INSTALL_INFO=${ac_cv_path_INSTALL_INFO=/usr/bin/install-info}
+ac_cv_path_PERL=${ac_cv_path_PERL=/usr/bin/perl}
+ac_cv_path_install=${ac_cv_path_install='/usr/bin/install -c'}
+ac_cv_prog_AS=${ac_cv_prog_AS=/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/as}
+ac_cv_prog_AWK=${ac_cv_prog_AWK=gawk}
+ac_cv_prog_BUILD_CC=${ac_cv_prog_BUILD_CC=gcc}
+ac_cv_prog_CC=${ac_cv_prog_CC='sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64'}
+ac_cv_prog_LD=${ac_cv_prog_LD=/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/ld}
+ac_cv_prog_MAKE=${ac_cv_prog_MAKE=make}
+ac_cv_prog_MAKEINFO=${ac_cv_prog_MAKEINFO=makeinfo}
+ac_cv_prog_MSGFMT=${ac_cv_prog_MSGFMT=msgfmt}
+ac_cv_prog_NM=${ac_cv_prog_NM=sparc64-unknown-linux-gnu-nm}
+ac_cv_prog_READELF=${ac_cv_prog_READELF=sparc64-unknown-linux-gnu-readelf}
+ac_cv_prog_SED=${ac_cv_prog_SED=sed}
+ac_cv_prog_ac_ct_CXX=${ac_cv_prog_ac_ct_CXX=g++}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g=yes}
+ac_cv_prog_cxx_g=${ac_cv_prog_cxx_g=yes}
+ac_cv_sizeof_long_double=${ac_cv_sizeof_long_double=0}
+libc_cv_Bgroup=${libc_cv_Bgroup=yes}
+libc_cv_as_noexecstack=${libc_cv_as_noexecstack=yes}
+libc_cv_asm_cfi_directives=${libc_cv_asm_cfi_directives=yes}
+libc_cv_asm_previous_directive=${libc_cv_asm_previous_directive=yes}
+libc_cv_asm_protected_directive=${libc_cv_asm_protected_directive=yes}
+libc_cv_asm_set_directive=${libc_cv_asm_set_directive=yes}
+libc_cv_asm_unique_object=${libc_cv_asm_unique_object=yes}
+libc_cv_asm_weak_directive=${libc_cv_asm_weak_directive=yes}
+libc_cv_broken_alias_attribute=${libc_cv_broken_alias_attribute=no}
+libc_cv_broken_visibility_attribute=${libc_cv_broken_visibility_attribute=no}
+libc_cv_c_cleanup=${libc_cv_c_cleanup=yes}
+libc_cv_cc_loop_to_function=${libc_cv_cc_loop_to_function=yes}
+libc_cv_cc_nofma=${libc_cv_cc_nofma=-ffp-contract=off}
+libc_cv_cc_with_libunwind=${libc_cv_cc_with_libunwind=no}
+libc_cv_ctors_header=${libc_cv_ctors_header=yes}
+libc_cv_dot_text=${libc_cv_dot_text=.text}
+libc_cv_fno_toplevel_reorder=${libc_cv_fno_toplevel_reorder=yes}
+libc_cv_forced_unwind=${libc_cv_forced_unwind=yes}
+libc_cv_fpie=${libc_cv_fpie=yes}
+libc_cv_friendly_stddef=${libc_cv_friendly_stddef=yes}
+libc_cv_gcc___thread=${libc_cv_gcc___thread=yes}
+libc_cv_gcc_builtin_memset=${libc_cv_gcc_builtin_memset=no}
+libc_cv_gcc_builtin_redirection=${libc_cv_gcc_builtin_redirection=yes}
+libc_cv_gcc_exceptions=${libc_cv_gcc_exceptions=yes}
+libc_cv_gcc_static_libgcc=${libc_cv_gcc_static_libgcc=-static-libgcc}
+libc_cv_gcc_tls_model_attr=${libc_cv_gcc_tls_model_attr=yes}
+libc_cv_gcc_unwind_find_fde=${libc_cv_gcc_unwind_find_fde=yes}
+libc_cv_gnu89_inline=${libc_cv_gnu89_inline=yes}
+libc_cv_hashstyle=${libc_cv_hashstyle=yes}
+libc_cv_have_bash2=${libc_cv_have_bash2=yes}
+libc_cv_have_ksh=${libc_cv_have_ksh=yes}
+libc_cv_have_sdata_section=${libc_cv_have_sdata_section=no}
+libc_cv_have_section_quotes=${libc_cv_have_section_quotes=no}
+libc_cv_idn=${libc_cv_idn=no}
+libc_cv_initfini_array=${libc_cv_initfini_array=yes}
+libc_cv_ld_gnu_indirect_function=${libc_cv_ld_gnu_indirect_function=yes}
+libc_cv_ld_no_whole_archive=${libc_cv_ld_no_whole_archive=yes}
+libc_cv_linux2619=${libc_cv_linux2619='2.6.19 or later'}
+test "${libc_cv_localstatedir+set}" = set || libc_cv_localstatedir='${prefix}/var'
+libc_cv_need_minus_P=${libc_cv_need_minus_P=no}
+libc_cv_nss_crypt=${libc_cv_nss_crypt=no}
+libc_cv_output_format=${libc_cv_output_format=elf64-sparc}
+libc_cv_pic_default=${libc_cv_pic_default=no}
+libc_cv_predef_fortify_source=${libc_cv_predef_fortify_source=no}
+libc_cv_predef_stack_protector=${libc_cv_predef_stack_protector=no}
+libc_cv_prog_as_gnu=${libc_cv_prog_as_gnu=yes}
+libc_cv_prog_ld_gnu=${libc_cv_prog_ld_gnu=yes}
+libc_cv_sparc64_tls=${libc_cv_sparc64_tls=yes}
+libc_cv_sparc_as_vis3=${libc_cv_sparc_as_vis3=yes}
+libc_cv_sparc_gcc_gotdata=${libc_cv_sparc_gcc_gotdata=yes}
+libc_cv_ssp=${libc_cv_ssp=no}
+test "${libc_cv_sysconfdir+set}" = set || libc_cv_sysconfdir='${prefix}/etc'
+libc_cv_use_default_link=${libc_cv_use_default_link=no}
+libc_cv_visibility_attribute=${libc_cv_visibility_attribute=yes}
+libc_cv_z_combreloc=${libc_cv_z_combreloc=yes}
+libc_cv_z_execstack=${libc_cv_z_execstack=yes}
+libc_cv_z_initfirst=${libc_cv_z_initfirst=yes}
+libc_cv_z_nodelete=${libc_cv_z_nodelete=yes}
+libc_cv_z_nodlopen=${libc_cv_z_nodlopen=yes}
+libc_cv_z_relro=${libc_cv_z_relro=yes}

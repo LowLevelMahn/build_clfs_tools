@@ -1,0 +1,131 @@
+configure: WARNING: if you wanted to set the --build type, don't use --host.
+    If a cross compiler is detected then cross compile mode will be used
+configure: loading cache config.cache
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... sparc64-unknown-linux-gnu
+checking for sparc64-unknown-linux-gnu-gcc... sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64 accepts -g... yes
+checking for gcc... gcc
+checking for sparc64-unknown-linux-gnu-g++... no
+checking for sparc64-unknown-linux-gnu-c++... no
+checking for sparc64-unknown-linux-gnu-gpp... no
+checking for sparc64-unknown-linux-gnu-aCC... no
+checking for sparc64-unknown-linux-gnu-CC... no
+checking for sparc64-unknown-linux-gnu-cxx... no
+checking for sparc64-unknown-linux-gnu-cc++... no
+checking for sparc64-unknown-linux-gnu-cl.exe... no
+checking for sparc64-unknown-linux-gnu-FCC... no
+checking for sparc64-unknown-linux-gnu-KCC... no
+checking for sparc64-unknown-linux-gnu-RCC... no
+checking for sparc64-unknown-linux-gnu-xlC_r... no
+checking for sparc64-unknown-linux-gnu-xlC... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for sparc64-unknown-linux-gnu-readelf... sparc64-unknown-linux-gnu-readelf
+checking for sysdeps preconfigure fragments... powerpc x86_64 
+configure: running configure fragment for add-on libidn
+configure: running configure fragment for add-on nptl
+checking add-on ports for preconfigure fragments... aarch64 alpha am33 arm hppa ia64 m68k microblaze mips tile 
+checking for assembler and linker STT_GNU_IFUNC support... yes
+checking whether .text pseudo-op must be used... yes
+checking sysdep dirs... nptl/sysdeps/unix/sysv/linux/sparc/sparc64 sysdeps/unix/sysv/linux/sparc/sparc64/nptl sysdeps/unix/sysv/linux/sparc/sparc64 sysdeps/unix/sysv/linux/wordsize-64 nptl/sysdeps/unix/sysv/linux/sparc sysdeps/unix/sysv/linux/sparc nptl/sysdeps/unix/sysv/linux nptl/sysdeps/pthread sysdeps/pthread ports/sysdeps/unix/sysv/linux sysdeps/unix/sysv/linux sysdeps/gnu sysdeps/unix/inet nptl/sysdeps/unix/sysv ports/sysdeps/unix/sysv sysdeps/unix/sysv nptl/sysdeps/unix ports/sysdeps/unix sysdeps/unix sysdeps/posix sysdeps/sparc/sparc64/fpu/multiarch sysdeps/sparc/sparc64/fpu sysdeps/sparc/sparc64/multiarch nptl/sysdeps/sparc/sparc64 sysdeps/sparc/sparc64 sysdeps/wordsize-64 sysdeps/ieee754/ldbl-128 sysdeps/ieee754/dbl-64/wordsize-64 sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/sparc/sparc64/soft-fp sysdeps/sparc/fpu nptl/sysdeps/sparc sysdeps/sparc sysdeps/ieee754 sysdeps/generic
+configure: WARNING: add-on ports contributed no useful sysdeps directories
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking whether /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/as is GNU as... yes
+checking whether /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/ld is GNU ld... yes
+checking for /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/as... /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/as
+checking version of /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/as... 2.24, ok
+checking for /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/ld... /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/ld
+checking version of /home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/cross-tools/bin/../lib/gcc/sparc64-unknown-linux-gnu/4.8.3/../../../../sparc64-unknown-linux-gnu/bin/ld... 2.24, ok
+checking for sparc64-unknown-linux-gnu-gcc... (cached) sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64
+checking version of sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64... 4.8.3, ok
+checking for gnumake... no
+checking for gmake... no
+checking for make... make
+checking version of make... 4.0, ok
+checking for gnumsgfmt... no
+checking for gmsgfmt... no
+checking for msgfmt... msgfmt
+checking version of msgfmt... 0.19.3, ok
+checking for makeinfo... makeinfo
+checking version of makeinfo... 5.2, ok
+checking for sed... sed
+checking version of sed... 4.2.2, ok
+checking for gawk... gawk
+checking version of gawk... 4.1.1, ok
+checking for sparc64-unknown-linux-gnu-nm... sparc64-unknown-linux-gnu-nm
+checking LD_LIBRARY_PATH variable... ok
+checking whether GCC supports -static-libgcc... -static-libgcc
+checking for bash... /bin/bash
+checking for perl... /usr/bin/perl
+checking for install-info... /usr/bin/install-info
+checking for bison... /usr/bin/bison
+checking for libc-friendly stddef.h... yes
+checking whether we need to use -P to assemble .S files... no
+checking for .set assembler directive... yes
+checking for assembler gnu_unique_object symbol type... yes
+checking for .previous assembler directive... yes
+checking for .protected and .hidden assembler directive... yes
+checking whether __attribute__((visibility())) is supported... yes
+checking for broken __attribute__((visibility()))... no
+checking for broken __attribute__((alias()))... no
+checking whether to put _rtld_local into .sdata section... no
+checking for .preinit_array/.init_array/.fini_array support... yes
+checking whether to use .ctors/.dtors header and trailer... yes
+checking for libunwind-support in compiler... no
+checking for linker that supports -z nodelete... yes
+checking for linker that supports -z nodlopen... yes
+checking for linker that supports -z initfirst... yes
+checking for -z relro option... yes
+checking for -Bgroup option... yes
+checking whether --noexecstack is desirable for .S files... yes
+checking for -z combreloc... yes
+checking for linker that supports -z execstack... yes
+checking for -fpie... yes
+checking for --hash-style option... yes
+checking for sufficient default -shared layout... no
+checking linker output format... elf64-sparc
+checking for -fno-toplevel-reorder -fno-section-anchors... yes
+checking for -fstack-protector... (cached) no
+checking for -fgnu89-inline... (cached) yes
+checking whether cc puts quotes around section names... no
+checking for assembler .weak directive... yes
+checking whether CFI directives are supported... yes
+checking for ld --no-whole-archive... yes
+checking for gcc -fexceptions... yes
+checking for __builtin_memset... no
+checking for redirection of built-in functions... yes
+checking for __thread... yes
+checking for tls_model attribute... yes
+checking for compiler option to disable generation of FMA instructions... -ffp-contract=off
+checking if sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64 accepts -fno-tree-loop-distribute-patterns with __attribute__ ((__optimize__))... yes
+checking for libgd... no
+checking for is_selinux_enabled in -lselinux... no
+checking size of long double... 0
+checking for _FORTIFY_SOURCE predefine... no
+checking whether sparc64-unknown-linux-gnu-gcc -mcpu=ultrasparc -mtune=ultrasparc -m64 implicitly enables -fstack-protector... no
+running configure fragment for nptl/sysdeps/pthread
+checking for forced unwind support... (cached) yes
+checking for C cleanup handling... (cached) yes
+running configure fragment for sysdeps/unix/sysv/linux
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking installed Linux kernel header files... 2.6.19 or later
+checking for kernel header at least 2.6.32... ok
+checking for linux/fanotify.h... yes
+running configure fragment for sysdeps/gnu
+running configure fragment for sysdeps/sparc
+checking for sparc assembler VIS3 support... yes
+checking for sparc gcc GOTDATA reloc support... yes
+checking for old glibc 2.0.x headers... no
+checking whether -fPIC is default... no
+configure: updating cache config.cache
+configure: creating ./config.status
+config.status: creating config.make
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing default commands

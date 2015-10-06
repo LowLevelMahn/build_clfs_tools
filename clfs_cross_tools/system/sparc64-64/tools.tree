@@ -1,0 +1,2247 @@
+.
+├── bin
+│   ├── catchsegv
+│   ├── gencat
+│   ├── getconf
+│   ├── getent
+│   ├── iconv
+│   ├── ldd
+│   ├── locale
+│   ├── localedef
+│   ├── makedb
+│   ├── mtrace
+│   ├── pcprofiledump
+│   ├── pldd
+│   ├── rpcgen
+│   ├── sotruss
+│   ├── sprof
+│   ├── tzselect
+│   └── xtrace
+├── etc
+│   └── rpc
+├── include
+│   ├── aio.h
+│   ├── aliases.h
+│   ├── alloca.h
+│   ├── a.out.h
+│   ├── argp.h
+│   ├── argz.h
+│   ├── ar.h
+│   ├── arpa
+│   │   ├── ftp.h
+│   │   ├── inet.h
+│   │   ├── nameser_compat.h
+│   │   ├── nameser.h
+│   │   ├── telnet.h
+│   │   └── tftp.h
+│   ├── asm
+│   │   ├── apc.h
+│   │   ├── asi.h
+│   │   ├── auxvec.h
+│   │   ├── bitsperlong.h
+│   │   ├── byteorder.h
+│   │   ├── display7seg.h
+│   │   ├── envctrl.h
+│   │   ├── errno.h
+│   │   ├── fbio.h
+│   │   ├── fcntl.h
+│   │   ├── ioctl.h
+│   │   ├── ioctls.h
+│   │   ├── ipcbuf.h
+│   │   ├── jsflash.h
+│   │   ├── kvm_para.h
+│   │   ├── mman.h
+│   │   ├── msgbuf.h
+│   │   ├── openpromio.h
+│   │   ├── param.h
+│   │   ├── perfctr.h
+│   │   ├── poll.h
+│   │   ├── posix_types.h
+│   │   ├── psrcompat.h
+│   │   ├── psr.h
+│   │   ├── pstate.h
+│   │   ├── ptrace.h
+│   │   ├── resource.h
+│   │   ├── sembuf.h
+│   │   ├── setup.h
+│   │   ├── shmbuf.h
+│   │   ├── sigcontext.h
+│   │   ├── siginfo.h
+│   │   ├── signal.h
+│   │   ├── socket.h
+│   │   ├── sockios.h
+│   │   ├── statfs.h
+│   │   ├── stat.h
+│   │   ├── swab.h
+│   │   ├── termbits.h
+│   │   ├── termios.h
+│   │   ├── traps.h
+│   │   ├── types.h
+│   │   ├── uctx.h
+│   │   ├── unistd.h
+│   │   ├── utrap.h
+│   │   └── watchdog.h
+│   ├── asm-generic
+│   │   ├── auxvec.h
+│   │   ├── bitsperlong.h
+│   │   ├── errno-base.h
+│   │   ├── errno.h
+│   │   ├── fcntl.h
+│   │   ├── int-l64.h
+│   │   ├── int-ll64.h
+│   │   ├── ioctl.h
+│   │   ├── ioctls.h
+│   │   ├── ipcbuf.h
+│   │   ├── kvm_para.h
+│   │   ├── mman-common.h
+│   │   ├── mman.h
+│   │   ├── msgbuf.h
+│   │   ├── param.h
+│   │   ├── poll.h
+│   │   ├── posix_types.h
+│   │   ├── resource.h
+│   │   ├── sembuf.h
+│   │   ├── setup.h
+│   │   ├── shmbuf.h
+│   │   ├── shmparam.h
+│   │   ├── siginfo.h
+│   │   ├── signal-defs.h
+│   │   ├── signal.h
+│   │   ├── socket.h
+│   │   ├── sockios.h
+│   │   ├── statfs.h
+│   │   ├── stat.h
+│   │   ├── swab.h
+│   │   ├── termbits.h
+│   │   ├── termios.h
+│   │   ├── types.h
+│   │   ├── ucontext.h
+│   │   └── unistd.h
+│   ├── assert.h
+│   ├── bits
+│   │   ├── a.out.h
+│   │   ├── byteswap-16.h
+│   │   ├── byteswap.h
+│   │   ├── cmathcalls.h
+│   │   ├── confname.h
+│   │   ├── dirent.h
+│   │   ├── dlfcn.h
+│   │   ├── elfclass.h
+│   │   ├── endian.h
+│   │   ├── environments.h
+│   │   ├── epoll.h
+│   │   ├── errno.h
+│   │   ├── error.h
+│   │   ├── eventfd.h
+│   │   ├── fcntl2.h
+│   │   ├── fcntl.h
+│   │   ├── fcntl-linux.h
+│   │   ├── fenv.h
+│   │   ├── fenvinline.h
+│   │   ├── huge_valf.h
+│   │   ├── huge_val.h
+│   │   ├── huge_vall.h
+│   │   ├── hwcap.h
+│   │   ├── inf.h
+│   │   ├── in.h
+│   │   ├── initspin.h
+│   │   ├── inotify.h
+│   │   ├── ioctls.h
+│   │   ├── ioctl-types.h
+│   │   ├── ipc.h
+│   │   ├── ipctypes.h
+│   │   ├── libc-lock.h
+│   │   ├── libio-ldbl.h
+│   │   ├── link.h
+│   │   ├── locale.h
+│   │   ├── local_lim.h
+│   │   ├── mathcalls.h
+│   │   ├── mathdef.h
+│   │   ├── math-finite.h
+│   │   ├── mathinline.h
+│   │   ├── mman.h
+│   │   ├── mman-linux.h
+│   │   ├── monetary-ldbl.h
+│   │   ├── mqueue2.h
+│   │   ├── mqueue.h
+│   │   ├── msq.h
+│   │   ├── nan.h
+│   │   ├── netdb.h
+│   │   ├── param.h
+│   │   ├── poll2.h
+│   │   ├── poll.h
+│   │   ├── posix1_lim.h
+│   │   ├── posix2_lim.h
+│   │   ├── posix_opt.h
+│   │   ├── printf-ldbl.h
+│   │   ├── pthreadtypes.h
+│   │   ├── resource.h
+│   │   ├── sched.h
+│   │   ├── select2.h
+│   │   ├── select.h
+│   │   ├── semaphore.h
+│   │   ├── sem.h
+│   │   ├── setjmp2.h
+│   │   ├── setjmp.h
+│   │   ├── shm.h
+│   │   ├── sigaction.h
+│   │   ├── sigcontext.h
+│   │   ├── siginfo.h
+│   │   ├── signalfd.h
+│   │   ├── signum.h
+│   │   ├── sigset.h
+│   │   ├── sigstack.h
+│   │   ├── sigthread.h
+│   │   ├── sockaddr.h
+│   │   ├── socket2.h
+│   │   ├── socket.h
+│   │   ├── socket_type.h
+│   │   ├── stab.def
+│   │   ├── statfs.h
+│   │   ├── stat.h
+│   │   ├── statvfs.h
+│   │   ├── stdio2.h
+│   │   ├── stdio.h
+│   │   ├── stdio-ldbl.h
+│   │   ├── stdio_lim.h
+│   │   ├── stdio-lock.h
+│   │   ├── stdlib-bsearch.h
+│   │   ├── stdlib-float.h
+│   │   ├── stdlib.h
+│   │   ├── stdlib-ldbl.h
+│   │   ├── string2.h
+│   │   ├── string3.h
+│   │   ├── string.h
+│   │   ├── stropts.h
+│   │   ├── syscall.h
+│   │   ├── sysctl.h
+│   │   ├── sys_errlist.h
+│   │   ├── syslog.h
+│   │   ├── syslog-ldbl.h
+│   │   ├── syslog-path.h
+│   │   ├── termios.h
+│   │   ├── time.h
+│   │   ├── timerfd.h
+│   │   ├── timex.h
+│   │   ├── types.h
+│   │   ├── typesizes.h
+│   │   ├── uio.h
+│   │   ├── unistd.h
+│   │   ├── ustat.h
+│   │   ├── utmp.h
+│   │   ├── utmpx.h
+│   │   ├── utsname.h
+│   │   ├── waitflags.h
+│   │   ├── waitstatus.h
+│   │   ├── wchar2.h
+│   │   ├── wchar.h
+│   │   ├── wchar-ldbl.h
+│   │   ├── wordsize.h
+│   │   ├── xopen_lim.h
+│   │   └── xtitypes.h
+│   ├── byteswap.h
+│   ├── complex.h
+│   ├── cpio.h
+│   ├── crypt.h
+│   ├── ctype.h
+│   ├── dirent.h
+│   ├── dlfcn.h
+│   ├── drm
+│   │   ├── drm_fourcc.h
+│   │   ├── drm.h
+│   │   ├── drm_mode.h
+│   │   ├── drm_sarea.h
+│   │   ├── exynos_drm.h
+│   │   ├── i810_drm.h
+│   │   ├── i915_drm.h
+│   │   ├── mga_drm.h
+│   │   ├── msm_drm.h
+│   │   ├── nouveau_drm.h
+│   │   ├── qxl_drm.h
+│   │   ├── r128_drm.h
+│   │   ├── radeon_drm.h
+│   │   ├── savage_drm.h
+│   │   ├── sis_drm.h
+│   │   ├── tegra_drm.h
+│   │   ├── via_drm.h
+│   │   └── vmwgfx_drm.h
+│   ├── elf.h
+│   ├── endian.h
+│   ├── envz.h
+│   ├── err.h
+│   ├── errno.h
+│   ├── error.h
+│   ├── execinfo.h
+│   ├── fcntl.h
+│   ├── features.h
+│   ├── fenv.h
+│   ├── fmtmsg.h
+│   ├── fnmatch.h
+│   ├── fpu_control.h
+│   ├── fstab.h
+│   ├── fts.h
+│   ├── ftw.h
+│   ├── _G_config.h
+│   ├── gconv.h
+│   ├── getopt.h
+│   ├── glob.h
+│   ├── gnu
+│   │   ├── libc-version.h
+│   │   ├── lib-names.h
+│   │   ├── stubs-64.h
+│   │   └── stubs.h
+│   ├── gnu-versions.h
+│   ├── grp.h
+│   ├── gshadow.h
+│   ├── iconv.h
+│   ├── ieee754.h
+│   ├── ifaddrs.h
+│   ├── inttypes.h
+│   ├── langinfo.h
+│   ├── lastlog.h
+│   ├── libgen.h
+│   ├── libintl.h
+│   ├── libio.h
+│   ├── limits.h
+│   ├── link.h
+│   ├── linux
+│   │   ├── acct.h
+│   │   ├── adb.h
+│   │   ├── adfs_fs.h
+│   │   ├── affs_hardblocks.h
+│   │   ├── agpgart.h
+│   │   ├── aio_abi.h
+│   │   ├── apm_bios.h
+│   │   ├── arcfb.h
+│   │   ├── atalk.h
+│   │   ├── atmapi.h
+│   │   ├── atmarp.h
+│   │   ├── atmbr2684.h
+│   │   ├── atmclip.h
+│   │   ├── atmdev.h
+│   │   ├── atm_eni.h
+│   │   ├── atm.h
+│   │   ├── atm_he.h
+│   │   ├── atm_idt77105.h
+│   │   ├── atmioc.h
+│   │   ├── atmlec.h
+│   │   ├── atmmpc.h
+│   │   ├── atm_nicstar.h
+│   │   ├── atmppp.h
+│   │   ├── atmsap.h
+│   │   ├── atmsvc.h
+│   │   ├── atm_tcp.h
+│   │   ├── atm_zatm.h
+│   │   ├── audit.h
+│   │   ├── auto_fs4.h
+│   │   ├── auto_fs.h
+│   │   ├── auxvec.h
+│   │   ├── ax25.h
+│   │   ├── b1lli.h
+│   │   ├── baycom.h
+│   │   ├── bcm933xx_hcs.h
+│   │   ├── bfs_fs.h
+│   │   ├── binfmts.h
+│   │   ├── blkpg.h
+│   │   ├── blktrace_api.h
+│   │   ├── bpqether.h
+│   │   ├── bsg.h
+│   │   ├── btrfs.h
+│   │   ├── byteorder
+│   │   │   ├── big_endian.h
+│   │   │   └── little_endian.h
+│   │   ├── caif
+│   │   │   ├── caif_socket.h
+│   │   │   └── if_caif.h
+│   │   ├── can
+│   │   │   ├── bcm.h
+│   │   │   ├── error.h
+│   │   │   ├── gw.h
+│   │   │   ├── netlink.h
+│   │   │   └── raw.h
+│   │   ├── can.h
+│   │   ├── capability.h
+│   │   ├── capi.h
+│   │   ├── cciss_defs.h
+│   │   ├── cciss_ioctl.h
+│   │   ├── cdrom.h
+│   │   ├── cgroupstats.h
+│   │   ├── chio.h
+│   │   ├── cm4000_cs.h
+│   │   ├── cn_proc.h
+│   │   ├── coda.h
+│   │   ├── coda_psdev.h
+│   │   ├── coff.h
+│   │   ├── connector.h
+│   │   ├── const.h
+│   │   ├── cramfs_fs.h
+│   │   ├── cuda.h
+│   │   ├── cyclades.h
+│   │   ├── cycx_cfm.h
+│   │   ├── dcbnl.h
+│   │   ├── dccp.h
+│   │   ├── dlmconstants.h
+│   │   ├── dlm_device.h
+│   │   ├── dlm.h
+│   │   ├── dlm_netlink.h
+│   │   ├── dlm_plock.h
+│   │   ├── dm-ioctl.h
+│   │   ├── dm-log-userspace.h
+│   │   ├── dn.h
+│   │   ├── dqblk_xfs.h
+│   │   ├── dvb
+│   │   │   ├── audio.h
+│   │   │   ├── ca.h
+│   │   │   ├── dmx.h
+│   │   │   ├── frontend.h
+│   │   │   ├── net.h
+│   │   │   ├── osd.h
+│   │   │   ├── version.h
+│   │   │   └── video.h
+│   │   ├── edd.h
+│   │   ├── efs_fs_sb.h
+│   │   ├── elfcore.h
+│   │   ├── elf-em.h
+│   │   ├── elf-fdpic.h
+│   │   ├── elf.h
+│   │   ├── errno.h
+│   │   ├── errqueue.h
+│   │   ├── ethtool.h
+│   │   ├── eventpoll.h
+│   │   ├── fadvise.h
+│   │   ├── falloc.h
+│   │   ├── fanotify.h
+│   │   ├── fb.h
+│   │   ├── fcntl.h
+│   │   ├── fd.h
+│   │   ├── fdreg.h
+│   │   ├── fib_rules.h
+│   │   ├── fiemap.h
+│   │   ├── filter.h
+│   │   ├── firewire-cdev.h
+│   │   ├── firewire-constants.h
+│   │   ├── flat.h
+│   │   ├── fs.h
+│   │   ├── fsl_hypervisor.h
+│   │   ├── fuse.h
+│   │   ├── futex.h
+│   │   ├── gameport.h
+│   │   ├── genetlink.h
+│   │   ├── gen_stats.h
+│   │   ├── gfs2_ondisk.h
+│   │   ├── gigaset_dev.h
+│   │   ├── hdlc
+│   │   │   └── ioctl.h
+│   │   ├── hdlcdrv.h
+│   │   ├── hdlc.h
+│   │   ├── hdreg.h
+│   │   ├── hiddev.h
+│   │   ├── hid.h
+│   │   ├── hidraw.h
+│   │   ├── hpet.h
+│   │   ├── hsi
+│   │   │   └── hsi_char.h
+│   │   ├── hw_breakpoint.h
+│   │   ├── hysdn_if.h
+│   │   ├── i2c-dev.h
+│   │   ├── i2c.h
+│   │   ├── i2o-dev.h
+│   │   ├── i8k.h
+│   │   ├── icmp.h
+│   │   ├── icmpv6.h
+│   │   ├── if_addr.h
+│   │   ├── if_addrlabel.h
+│   │   ├── if_alg.h
+│   │   ├── if_arcnet.h
+│   │   ├── if_arp.h
+│   │   ├── if_bonding.h
+│   │   ├── if_bridge.h
+│   │   ├── if_cablemodem.h
+│   │   ├── if_eql.h
+│   │   ├── if_ether.h
+│   │   ├── if_fc.h
+│   │   ├── if_fddi.h
+│   │   ├── if_frad.h
+│   │   ├── if.h
+│   │   ├── if_hippi.h
+│   │   ├── if_infiniband.h
+│   │   ├── if_link.h
+│   │   ├── if_ltalk.h
+│   │   ├── if_packet.h
+│   │   ├── if_phonet.h
+│   │   ├── if_plip.h
+│   │   ├── if_ppp.h
+│   │   ├── if_pppol2tp.h
+│   │   ├── if_pppox.h
+│   │   ├── if_slip.h
+│   │   ├── if_team.h
+│   │   ├── if_tun.h
+│   │   ├── if_tunnel.h
+│   │   ├── if_vlan.h
+│   │   ├── if_x25.h
+│   │   ├── igmp.h
+│   │   ├── in6.h
+│   │   ├── inet_diag.h
+│   │   ├── in.h
+│   │   ├── inotify.h
+│   │   ├── input.h
+│   │   ├── in_route.h
+│   │   ├── ioctl.h
+│   │   ├── ip6_tunnel.h
+│   │   ├── ipc.h
+│   │   ├── ip.h
+│   │   ├── ipmi.h
+│   │   ├── ipmi_msgdefs.h
+│   │   ├── ipsec.h
+│   │   ├── ipv6.h
+│   │   ├── ipv6_route.h
+│   │   ├── ip_vs.h
+│   │   ├── ipx.h
+│   │   ├── irda.h
+│   │   ├── irqnr.h
+│   │   ├── isdn
+│   │   │   └── capicmd.h
+│   │   ├── isdn_divertif.h
+│   │   ├── isdn.h
+│   │   ├── isdnif.h
+│   │   ├── isdn_ppp.h
+│   │   ├── iso_fs.h
+│   │   ├── ivtvfb.h
+│   │   ├── ivtv.h
+│   │   ├── ixjuser.h
+│   │   ├── jffs2.h
+│   │   ├── joystick.h
+│   │   ├── kdev_t.h
+│   │   ├── kd.h
+│   │   ├── kernelcapi.h
+│   │   ├── kernel.h
+│   │   ├── kernel-page-flags.h
+│   │   ├── kexec.h
+│   │   ├── keyboard.h
+│   │   ├── keyctl.h
+│   │   ├── kvm_para.h
+│   │   ├── l2tp.h
+│   │   ├── libc-compat.h
+│   │   ├── limits.h
+│   │   ├── llc.h
+│   │   ├── loop.h
+│   │   ├── lp.h
+│   │   ├── magic.h
+│   │   ├── major.h
+│   │   ├── map_to_7segment.h
+│   │   ├── matroxfb.h
+│   │   ├── mdio.h
+│   │   ├── media.h
+│   │   ├── mei.h
+│   │   ├── mempolicy.h
+│   │   ├── meye.h
+│   │   ├── mic_common.h
+│   │   ├── mic_ioctl.h
+│   │   ├── mii.h
+│   │   ├── minix_fs.h
+│   │   ├── mman.h
+│   │   ├── mmc
+│   │   │   └── ioctl.h
+│   │   ├── mmtimer.h
+│   │   ├── mqueue.h
+│   │   ├── mroute6.h
+│   │   ├── mroute.h
+│   │   ├── msdos_fs.h
+│   │   ├── msg.h
+│   │   ├── mtio.h
+│   │   ├── nbd.h
+│   │   ├── ncp_fs.h
+│   │   ├── ncp.h
+│   │   ├── ncp_mount.h
+│   │   ├── ncp_no.h
+│   │   ├── neighbour.h
+│   │   ├── netconf.h
+│   │   ├── netdevice.h
+│   │   ├── net_dropmon.h
+│   │   ├── netfilter
+│   │   │   ├── ipset
+│   │   │   │   ├── ip_set_bitmap.h
+│   │   │   │   ├── ip_set.h
+│   │   │   │   ├── ip_set_hash.h
+│   │   │   │   └── ip_set_list.h
+│   │   │   ├── nf_conntrack_common.h
+│   │   │   ├── nf_conntrack_ftp.h
+│   │   │   ├── nf_conntrack_sctp.h
+│   │   │   ├── nf_conntrack_tcp.h
+│   │   │   ├── nf_conntrack_tuple_common.h
+│   │   │   ├── nf_nat.h
+│   │   │   ├── nfnetlink_acct.h
+│   │   │   ├── nfnetlink_compat.h
+│   │   │   ├── nfnetlink_conntrack.h
+│   │   │   ├── nfnetlink_cthelper.h
+│   │   │   ├── nfnetlink_cttimeout.h
+│   │   │   ├── nfnetlink.h
+│   │   │   ├── nfnetlink_log.h
+│   │   │   ├── nfnetlink_queue.h
+│   │   │   ├── nf_tables_compat.h
+│   │   │   ├── nf_tables.h
+│   │   │   ├── x_tables.h
+│   │   │   ├── xt_addrtype.h
+│   │   │   ├── xt_AUDIT.h
+│   │   │   ├── xt_bpf.h
+│   │   │   ├── xt_cgroup.h
+│   │   │   ├── xt_CHECKSUM.h
+│   │   │   ├── xt_CLASSIFY.h
+│   │   │   ├── xt_cluster.h
+│   │   │   ├── xt_comment.h
+│   │   │   ├── xt_connbytes.h
+│   │   │   ├── xt_connlabel.h
+│   │   │   ├── xt_connlimit.h
+│   │   │   ├── xt_connmark.h
+│   │   │   ├── xt_CONNMARK.h
+│   │   │   ├── xt_CONNSECMARK.h
+│   │   │   ├── xt_conntrack.h
+│   │   │   ├── xt_cpu.h
+│   │   │   ├── xt_CT.h
+│   │   │   ├── xt_dccp.h
+│   │   │   ├── xt_devgroup.h
+│   │   │   ├── xt_dscp.h
+│   │   │   ├── xt_DSCP.h
+│   │   │   ├── xt_ecn.h
+│   │   │   ├── xt_esp.h
+│   │   │   ├── xt_hashlimit.h
+│   │   │   ├── xt_helper.h
+│   │   │   ├── xt_HMARK.h
+│   │   │   ├── xt_IDLETIMER.h
+│   │   │   ├── xt_ipcomp.h
+│   │   │   ├── xt_iprange.h
+│   │   │   ├── xt_ipvs.h
+│   │   │   ├── xt_l2tp.h
+│   │   │   ├── xt_LED.h
+│   │   │   ├── xt_length.h
+│   │   │   ├── xt_limit.h
+│   │   │   ├── xt_LOG.h
+│   │   │   ├── xt_mac.h
+│   │   │   ├── xt_mark.h
+│   │   │   ├── xt_MARK.h
+│   │   │   ├── xt_multiport.h
+│   │   │   ├── xt_nfacct.h
+│   │   │   ├── xt_NFLOG.h
+│   │   │   ├── xt_NFQUEUE.h
+│   │   │   ├── xt_osf.h
+│   │   │   ├── xt_owner.h
+│   │   │   ├── xt_physdev.h
+│   │   │   ├── xt_pkttype.h
+│   │   │   ├── xt_policy.h
+│   │   │   ├── xt_quota.h
+│   │   │   ├── xt_rateest.h
+│   │   │   ├── xt_RATEEST.h
+│   │   │   ├── xt_realm.h
+│   │   │   ├── xt_recent.h
+│   │   │   ├── xt_rpfilter.h
+│   │   │   ├── xt_sctp.h
+│   │   │   ├── xt_SECMARK.h
+│   │   │   ├── xt_set.h
+│   │   │   ├── xt_socket.h
+│   │   │   ├── xt_state.h
+│   │   │   ├── xt_statistic.h
+│   │   │   ├── xt_string.h
+│   │   │   ├── xt_tcpmss.h
+│   │   │   ├── xt_TCPMSS.h
+│   │   │   ├── xt_TCPOPTSTRIP.h
+│   │   │   ├── xt_tcpudp.h
+│   │   │   ├── xt_TEE.h
+│   │   │   ├── xt_time.h
+│   │   │   ├── xt_TPROXY.h
+│   │   │   └── xt_u32.h
+│   │   ├── netfilter_arp
+│   │   │   ├── arp_tables.h
+│   │   │   └── arpt_mangle.h
+│   │   ├── netfilter_arp.h
+│   │   ├── netfilter_bridge
+│   │   │   ├── ebt_802_3.h
+│   │   │   ├── ebtables.h
+│   │   │   ├── ebt_among.h
+│   │   │   ├── ebt_arp.h
+│   │   │   ├── ebt_arpreply.h
+│   │   │   ├── ebt_ip6.h
+│   │   │   ├── ebt_ip.h
+│   │   │   ├── ebt_limit.h
+│   │   │   ├── ebt_log.h
+│   │   │   ├── ebt_mark_m.h
+│   │   │   ├── ebt_mark_t.h
+│   │   │   ├── ebt_nat.h
+│   │   │   ├── ebt_nflog.h
+│   │   │   ├── ebt_pkttype.h
+│   │   │   ├── ebt_redirect.h
+│   │   │   ├── ebt_stp.h
+│   │   │   ├── ebt_ulog.h
+│   │   │   └── ebt_vlan.h
+│   │   ├── netfilter_bridge.h
+│   │   ├── netfilter_decnet.h
+│   │   ├── netfilter.h
+│   │   ├── netfilter_ipv4
+│   │   │   ├── ip_tables.h
+│   │   │   ├── ipt_ah.h
+│   │   │   ├── ipt_CLUSTERIP.h
+│   │   │   ├── ipt_ecn.h
+│   │   │   ├── ipt_ECN.h
+│   │   │   ├── ipt_LOG.h
+│   │   │   ├── ipt_REJECT.h
+│   │   │   ├── ipt_ttl.h
+│   │   │   ├── ipt_TTL.h
+│   │   │   └── ipt_ULOG.h
+│   │   ├── netfilter_ipv4.h
+│   │   ├── netfilter_ipv6
+│   │   │   ├── ip6_tables.h
+│   │   │   ├── ip6t_ah.h
+│   │   │   ├── ip6t_frag.h
+│   │   │   ├── ip6t_hl.h
+│   │   │   ├── ip6t_HL.h
+│   │   │   ├── ip6t_ipv6header.h
+│   │   │   ├── ip6t_LOG.h
+│   │   │   ├── ip6t_mh.h
+│   │   │   ├── ip6t_NPT.h
+│   │   │   ├── ip6t_opts.h
+│   │   │   ├── ip6t_REJECT.h
+│   │   │   └── ip6t_rt.h
+│   │   ├── netfilter_ipv6.h
+│   │   ├── net.h
+│   │   ├── netlink_diag.h
+│   │   ├── netlink.h
+│   │   ├── netrom.h
+│   │   ├── net_tstamp.h
+│   │   ├── nfc.h
+│   │   ├── nfs2.h
+│   │   ├── nfs3.h
+│   │   ├── nfs4.h
+│   │   ├── nfs4_mount.h
+│   │   ├── nfsacl.h
+│   │   ├── nfsd
+│   │   │   ├── cld.h
+│   │   │   ├── debug.h
+│   │   │   ├── export.h
+│   │   │   ├── nfsfh.h
+│   │   │   └── stats.h
+│   │   ├── nfs_fs.h
+│   │   ├── nfs.h
+│   │   ├── nfs_idmap.h
+│   │   ├── nfs_mount.h
+│   │   ├── nl80211.h
+│   │   ├── n_r3964.h
+│   │   ├── nubus.h
+│   │   ├── nvme.h
+│   │   ├── nvram.h
+│   │   ├── omap3isp.h
+│   │   ├── omapfb.h
+│   │   ├── oom.h
+│   │   ├── openvswitch.h
+│   │   ├── packet_diag.h
+│   │   ├── param.h
+│   │   ├── parport.h
+│   │   ├── patchkey.h
+│   │   ├── pci.h
+│   │   ├── pci_regs.h
+│   │   ├── perf_event.h
+│   │   ├── personality.h
+│   │   ├── pfkeyv2.h
+│   │   ├── pg.h
+│   │   ├── phantom.h
+│   │   ├── phonet.h
+│   │   ├── pktcdvd.h
+│   │   ├── pkt_cls.h
+│   │   ├── pkt_sched.h
+│   │   ├── pmu.h
+│   │   ├── poll.h
+│   │   ├── posix_types.h
+│   │   ├── ppdev.h
+│   │   ├── ppp-comp.h
+│   │   ├── ppp_defs.h
+│   │   ├── ppp-ioctl.h
+│   │   ├── pps.h
+│   │   ├── prctl.h
+│   │   ├── ptp_clock.h
+│   │   ├── ptrace.h
+│   │   ├── qnx4_fs.h
+│   │   ├── qnxtypes.h
+│   │   ├── quota.h
+│   │   ├── radeonfb.h
+│   │   ├── raid
+│   │   │   ├── md_p.h
+│   │   │   └── md_u.h
+│   │   ├── random.h
+│   │   ├── raw.h
+│   │   ├── rds.h
+│   │   ├── reboot.h
+│   │   ├── reiserfs_fs.h
+│   │   ├── reiserfs_xattr.h
+│   │   ├── resource.h
+│   │   ├── rfkill.h
+│   │   ├── romfs_fs.h
+│   │   ├── rose.h
+│   │   ├── route.h
+│   │   ├── rtc.h
+│   │   ├── rtnetlink.h
+│   │   ├── scc.h
+│   │   ├── sched.h
+│   │   ├── screen_info.h
+│   │   ├── sctp.h
+│   │   ├── sdla.h
+│   │   ├── seccomp.h
+│   │   ├── securebits.h
+│   │   ├── selinux_netlink.h
+│   │   ├── sem.h
+│   │   ├── serial_core.h
+│   │   ├── serial.h
+│   │   ├── serial_reg.h
+│   │   ├── serio.h
+│   │   ├── shm.h
+│   │   ├── signalfd.h
+│   │   ├── signal.h
+│   │   ├── snmp.h
+│   │   ├── sock_diag.h
+│   │   ├── socket.h
+│   │   ├── sockios.h
+│   │   ├── som.h
+│   │   ├── sonet.h
+│   │   ├── sonypi.h
+│   │   ├── soundcard.h
+│   │   ├── sound.h
+│   │   ├── spi
+│   │   │   └── spidev.h
+│   │   ├── stat.h
+│   │   ├── stddef.h
+│   │   ├── string.h
+│   │   ├── sunrpc
+│   │   │   └── debug.h
+│   │   ├── suspend_ioctls.h
+│   │   ├── swab.h
+│   │   ├── synclink.h
+│   │   ├── sysctl.h
+│   │   ├── sysinfo.h
+│   │   ├── taskstats.h
+│   │   ├── tc_act
+│   │   │   ├── tc_csum.h
+│   │   │   ├── tc_defact.h
+│   │   │   ├── tc_gact.h
+│   │   │   ├── tc_ipt.h
+│   │   │   ├── tc_mirred.h
+│   │   │   ├── tc_nat.h
+│   │   │   ├── tc_pedit.h
+│   │   │   └── tc_skbedit.h
+│   │   ├── tc_ematch
+│   │   │   ├── tc_em_cmp.h
+│   │   │   ├── tc_em_meta.h
+│   │   │   ├── tc_em_nbyte.h
+│   │   │   └── tc_em_text.h
+│   │   ├── tcp.h
+│   │   ├── tcp_metrics.h
+│   │   ├── telephony.h
+│   │   ├── termios.h
+│   │   ├── time.h
+│   │   ├── times.h
+│   │   ├── timex.h
+│   │   ├── tiocl.h
+│   │   ├── tipc_config.h
+│   │   ├── tipc.h
+│   │   ├── toshiba.h
+│   │   ├── tty_flags.h
+│   │   ├── tty.h
+│   │   ├── types.h
+│   │   ├── udf_fs_i.h
+│   │   ├── udp.h
+│   │   ├── uhid.h
+│   │   ├── uinput.h
+│   │   ├── uio.h
+│   │   ├── ultrasound.h
+│   │   ├── un.h
+│   │   ├── unistd.h
+│   │   ├── unix_diag.h
+│   │   ├── usb
+│   │   │   ├── audio.h
+│   │   │   ├── cdc.h
+│   │   │   ├── cdc-wdm.h
+│   │   │   ├── ch11.h
+│   │   │   ├── ch9.h
+│   │   │   ├── functionfs.h
+│   │   │   ├── gadgetfs.h
+│   │   │   ├── g_printer.h
+│   │   │   ├── midi.h
+│   │   │   ├── tmc.h
+│   │   │   └── video.h
+│   │   ├── usbdevice_fs.h
+│   │   ├── utime.h
+│   │   ├── utsname.h
+│   │   ├── uuid.h
+│   │   ├── uvcvideo.h
+│   │   ├── v4l2-common.h
+│   │   ├── v4l2-controls.h
+│   │   ├── v4l2-dv-timings.h
+│   │   ├── v4l2-mediabus.h
+│   │   ├── v4l2-subdev.h
+│   │   ├── version.h
+│   │   ├── veth.h
+│   │   ├── vfio.h
+│   │   ├── vhost.h
+│   │   ├── videodev2.h
+│   │   ├── virtio_9p.h
+│   │   ├── virtio_balloon.h
+│   │   ├── virtio_blk.h
+│   │   ├── virtio_config.h
+│   │   ├── virtio_console.h
+│   │   ├── virtio_ids.h
+│   │   ├── virtio_net.h
+│   │   ├── virtio_pci.h
+│   │   ├── virtio_ring.h
+│   │   ├── virtio_rng.h
+│   │   ├── vt.h
+│   │   ├── wait.h
+│   │   ├── wanrouter.h
+│   │   ├── watchdog.h
+│   │   ├── wimax
+│   │   │   └── i2400m.h
+│   │   ├── wimax.h
+│   │   ├── wireless.h
+│   │   ├── x25.h
+│   │   ├── xattr.h
+│   │   ├── xfrm.h
+│   │   ├── zorro.h
+│   │   └── zorro_ids.h
+│   ├── locale.h
+│   ├── malloc.h
+│   ├── math.h
+│   ├── mcheck.h
+│   ├── memory.h
+│   ├── mntent.h
+│   ├── monetary.h
+│   ├── mqueue.h
+│   ├── mtd
+│   │   ├── inftl-user.h
+│   │   ├── mtd-abi.h
+│   │   ├── mtd-user.h
+│   │   ├── nftl-user.h
+│   │   └── ubi-user.h
+│   ├── net
+│   │   ├── ethernet.h
+│   │   ├── if_arp.h
+│   │   ├── if.h
+│   │   ├── if_packet.h
+│   │   ├── if_ppp.h
+│   │   ├── if_shaper.h
+│   │   ├── if_slip.h
+│   │   ├── ppp-comp.h
+│   │   ├── ppp_defs.h
+│   │   └── route.h
+│   ├── netash
+│   │   └── ash.h
+│   ├── netatalk
+│   │   └── at.h
+│   ├── netax25
+│   │   └── ax25.h
+│   ├── netdb.h
+│   ├── neteconet
+│   │   └── ec.h
+│   ├── netinet
+│   │   ├── ether.h
+│   │   ├── icmp6.h
+│   │   ├── if_ether.h
+│   │   ├── if_fddi.h
+│   │   ├── if_tr.h
+│   │   ├── igmp.h
+│   │   ├── in.h
+│   │   ├── in_systm.h
+│   │   ├── ip6.h
+│   │   ├── ip.h
+│   │   ├── ip_icmp.h
+│   │   ├── tcp.h
+│   │   └── udp.h
+│   ├── netipx
+│   │   └── ipx.h
+│   ├── netiucv
+│   │   └── iucv.h
+│   ├── netpacket
+│   │   └── packet.h
+│   ├── netrom
+│   │   └── netrom.h
+│   ├── netrose
+│   │   └── rose.h
+│   ├── nfs
+│   │   └── nfs.h
+│   ├── nl_types.h
+│   ├── nss.h
+│   ├── obstack.h
+│   ├── paths.h
+│   ├── poll.h
+│   ├── printf.h
+│   ├── protocols
+│   │   ├── routed.h
+│   │   ├── rwhod.h
+│   │   ├── talkd.h
+│   │   └── timed.h
+│   ├── pthread.h
+│   ├── pty.h
+│   ├── pwd.h
+│   ├── rdma
+│   │   ├── ib_user_cm.h
+│   │   ├── ib_user_mad.h
+│   │   ├── ib_user_sa.h
+│   │   ├── ib_user_verbs.h
+│   │   ├── rdma_netlink.h
+│   │   └── rdma_user_cm.h
+│   ├── re_comp.h
+│   ├── regex.h
+│   ├── regexp.h
+│   ├── resolv.h
+│   ├── rpc
+│   │   ├── auth_des.h
+│   │   ├── auth.h
+│   │   ├── auth_unix.h
+│   │   ├── clnt.h
+│   │   ├── des_crypt.h
+│   │   ├── key_prot.h
+│   │   ├── netdb.h
+│   │   ├── pmap_clnt.h
+│   │   ├── pmap_prot.h
+│   │   ├── pmap_rmt.h
+│   │   ├── rpc_des.h
+│   │   ├── rpc.h
+│   │   ├── rpc_msg.h
+│   │   ├── svc_auth.h
+│   │   ├── svc.h
+│   │   ├── types.h
+│   │   └── xdr.h
+│   ├── rpcsvc
+│   │   ├── bootparam.h
+│   │   ├── bootparam_prot.h
+│   │   ├── bootparam_prot.x
+│   │   ├── key_prot.h
+│   │   ├── key_prot.x
+│   │   ├── klm_prot.h
+│   │   ├── klm_prot.x
+│   │   ├── mount.h
+│   │   ├── mount.x
+│   │   ├── nfs_prot.h
+│   │   ├── nfs_prot.x
+│   │   ├── nis_callback.h
+│   │   ├── nis_callback.x
+│   │   ├── nis.h
+│   │   ├── nislib.h
+│   │   ├── nis_object.x
+│   │   ├── nis_tags.h
+│   │   ├── nis.x
+│   │   ├── nlm_prot.h
+│   │   ├── nlm_prot.x
+│   │   ├── rex.h
+│   │   ├── rex.x
+│   │   ├── rquota.h
+│   │   ├── rquota.x
+│   │   ├── rstat.h
+│   │   ├── rstat.x
+│   │   ├── rusers.h
+│   │   ├── rusers.x
+│   │   ├── sm_inter.h
+│   │   ├── sm_inter.x
+│   │   ├── spray.h
+│   │   ├── spray.x
+│   │   ├── ypclnt.h
+│   │   ├── yp.h
+│   │   ├── yppasswd.h
+│   │   ├── yppasswd.x
+│   │   ├── yp_prot.h
+│   │   ├── ypupd.h
+│   │   └── yp.x
+│   ├── sched.h
+│   ├── scsi
+│   │   ├── fc
+│   │   │   ├── fc_els.h
+│   │   │   ├── fc_fs.h
+│   │   │   ├── fc_gs.h
+│   │   │   └── fc_ns.h
+│   │   ├── scsi_bsg_fc.h
+│   │   ├── scsi.h
+│   │   ├── scsi_ioctl.h
+│   │   ├── scsi_netlink_fc.h
+│   │   ├── scsi_netlink.h
+│   │   └── sg.h
+│   ├── search.h
+│   ├── semaphore.h
+│   ├── setjmp.h
+│   ├── sgtty.h
+│   ├── shadow.h
+│   ├── signal.h
+│   ├── sound
+│   │   ├── asequencer.h
+│   │   ├── asound_fm.h
+│   │   ├── asound.h
+│   │   ├── compress_offload.h
+│   │   ├── compress_params.h
+│   │   ├── emu10k1.h
+│   │   ├── firewire.h
+│   │   ├── hdsp.h
+│   │   ├── hdspm.h
+│   │   ├── sb16_csp.h
+│   │   └── sfnt_info.h
+│   ├── spawn.h
+│   ├── stab.h
+│   ├── stdc-predef.h
+│   ├── stdint.h
+│   ├── stdio_ext.h
+│   ├── stdio.h
+│   ├── stdlib.h
+│   ├── string.h
+│   ├── strings.h
+│   ├── stropts.h
+│   ├── sys
+│   │   ├── acct.h
+│   │   ├── auxv.h
+│   │   ├── bitypes.h
+│   │   ├── cdefs.h
+│   │   ├── dir.h
+│   │   ├── epoll.h
+│   │   ├── errno.h
+│   │   ├── eventfd.h
+│   │   ├── fanotify.h
+│   │   ├── fcntl.h
+│   │   ├── file.h
+│   │   ├── fsuid.h
+│   │   ├── gmon.h
+│   │   ├── gmon_out.h
+│   │   ├── inotify.h
+│   │   ├── ioctl.h
+│   │   ├── ipc.h
+│   │   ├── kdaemon.h
+│   │   ├── kd.h
+│   │   ├── klog.h
+│   │   ├── mman.h
+│   │   ├── mount.h
+│   │   ├── msg.h
+│   │   ├── mtio.h
+│   │   ├── param.h
+│   │   ├── pci.h
+│   │   ├── personality.h
+│   │   ├── poll.h
+│   │   ├── prctl.h
+│   │   ├── procfs.h
+│   │   ├── profil.h
+│   │   ├── ptrace.h
+│   │   ├── queue.h
+│   │   ├── quota.h
+│   │   ├── raw.h
+│   │   ├── reboot.h
+│   │   ├── resource.h
+│   │   ├── select.h
+│   │   ├── sem.h
+│   │   ├── sendfile.h
+│   │   ├── shm.h
+│   │   ├── signalfd.h
+│   │   ├── signal.h
+│   │   ├── socket.h
+│   │   ├── socketvar.h
+│   │   ├── soundcard.h
+│   │   ├── statfs.h
+│   │   ├── stat.h
+│   │   ├── statvfs.h
+│   │   ├── stropts.h
+│   │   ├── swap.h
+│   │   ├── syscall.h
+│   │   ├── sysctl.h
+│   │   ├── sysinfo.h
+│   │   ├── syslog.h
+│   │   ├── sysmacros.h
+│   │   ├── termios.h
+│   │   ├── timeb.h
+│   │   ├── time.h
+│   │   ├── timerfd.h
+│   │   ├── times.h
+│   │   ├── timex.h
+│   │   ├── ttychars.h
+│   │   ├── ttydefaults.h
+│   │   ├── types.h
+│   │   ├── ucontext.h
+│   │   ├── uio.h
+│   │   ├── ultrasound.h
+│   │   ├── un.h
+│   │   ├── unistd.h
+│   │   ├── user.h
+│   │   ├── ustat.h
+│   │   ├── utsname.h
+│   │   ├── vfs.h
+│   │   ├── vlimit.h
+│   │   ├── vt.h
+│   │   ├── vtimes.h
+│   │   ├── wait.h
+│   │   └── xattr.h
+│   ├── syscall.h
+│   ├── sysexits.h
+│   ├── syslog.h
+│   ├── tar.h
+│   ├── termio.h
+│   ├── termios.h
+│   ├── tgmath.h
+│   ├── thread_db.h
+│   ├── time.h
+│   ├── ttyent.h
+│   ├── uapi
+│   ├── uchar.h
+│   ├── ucontext.h
+│   ├── ulimit.h
+│   ├── unistd.h
+│   ├── ustat.h
+│   ├── utime.h
+│   ├── utmp.h
+│   ├── utmpx.h
+│   ├── values.h
+│   ├── video
+│   │   ├── edid.h
+│   │   ├── sisfb.h
+│   │   └── uvesafb.h
+│   ├── wait.h
+│   ├── wchar.h
+│   ├── wctype.h
+│   ├── wordexp.h
+│   ├── xen
+│   │   ├── evtchn.h
+│   │   ├── gntalloc.h
+│   │   ├── gntdev.h
+│   │   └── privcmd.h
+│   └── xlocale.h
+├── lib
+│   ├── audit
+│   │   └── sotruss-lib.so
+│   ├── crt1.o
+│   ├── crti.o
+│   ├── crtn.o
+│   ├── gconv
+│   │   ├── ANSI_X3.110.so
+│   │   ├── ARMSCII-8.so
+│   │   ├── ASMO_449.so
+│   │   ├── BIG5HKSCS.so
+│   │   ├── BIG5.so
+│   │   ├── BRF.so
+│   │   ├── CP10007.so
+│   │   ├── CP1125.so
+│   │   ├── CP1250.so
+│   │   ├── CP1251.so
+│   │   ├── CP1252.so
+│   │   ├── CP1253.so
+│   │   ├── CP1254.so
+│   │   ├── CP1255.so
+│   │   ├── CP1256.so
+│   │   ├── CP1257.so
+│   │   ├── CP1258.so
+│   │   ├── CP737.so
+│   │   ├── CP770.so
+│   │   ├── CP771.so
+│   │   ├── CP772.so
+│   │   ├── CP773.so
+│   │   ├── CP774.so
+│   │   ├── CP775.so
+│   │   ├── CP932.so
+│   │   ├── CSN_369103.so
+│   │   ├── CWI.so
+│   │   ├── DEC-MCS.so
+│   │   ├── EBCDIC-AT-DE-A.so
+│   │   ├── EBCDIC-AT-DE.so
+│   │   ├── EBCDIC-CA-FR.so
+│   │   ├── EBCDIC-DK-NO-A.so
+│   │   ├── EBCDIC-DK-NO.so
+│   │   ├── EBCDIC-ES-A.so
+│   │   ├── EBCDIC-ES.so
+│   │   ├── EBCDIC-ES-S.so
+│   │   ├── EBCDIC-FI-SE-A.so
+│   │   ├── EBCDIC-FI-SE.so
+│   │   ├── EBCDIC-FR.so
+│   │   ├── EBCDIC-IS-FRISS.so
+│   │   ├── EBCDIC-IT.so
+│   │   ├── EBCDIC-PT.so
+│   │   ├── EBCDIC-UK.so
+│   │   ├── EBCDIC-US.so
+│   │   ├── ECMA-CYRILLIC.so
+│   │   ├── EUC-CN.so
+│   │   ├── EUC-JISX0213.so
+│   │   ├── EUC-JP-MS.so
+│   │   ├── EUC-JP.so
+│   │   ├── EUC-KR.so
+│   │   ├── EUC-TW.so
+│   │   ├── GB18030.so
+│   │   ├── GBBIG5.so
+│   │   ├── GBGBK.so
+│   │   ├── GBK.so
+│   │   ├── gconv-modules
+│   │   ├── GEORGIAN-ACADEMY.so
+│   │   ├── GEORGIAN-PS.so
+│   │   ├── GOST_19768-74.so
+│   │   ├── GREEK7-OLD.so
+│   │   ├── GREEK7.so
+│   │   ├── GREEK-CCITT.so
+│   │   ├── HP-GREEK8.so
+│   │   ├── HP-ROMAN8.so
+│   │   ├── HP-ROMAN9.so
+│   │   ├── HP-THAI8.so
+│   │   ├── HP-TURKISH8.so
+│   │   ├── IBM037.so
+│   │   ├── IBM038.so
+│   │   ├── IBM1004.so
+│   │   ├── IBM1008_420.so
+│   │   ├── IBM1008.so
+│   │   ├── IBM1025.so
+│   │   ├── IBM1026.so
+│   │   ├── IBM1046.so
+│   │   ├── IBM1047.so
+│   │   ├── IBM1097.so
+│   │   ├── IBM1112.so
+│   │   ├── IBM1122.so
+│   │   ├── IBM1123.so
+│   │   ├── IBM1124.so
+│   │   ├── IBM1129.so
+│   │   ├── IBM1130.so
+│   │   ├── IBM1132.so
+│   │   ├── IBM1133.so
+│   │   ├── IBM1137.so
+│   │   ├── IBM1140.so
+│   │   ├── IBM1141.so
+│   │   ├── IBM1142.so
+│   │   ├── IBM1143.so
+│   │   ├── IBM1144.so
+│   │   ├── IBM1145.so
+│   │   ├── IBM1146.so
+│   │   ├── IBM1147.so
+│   │   ├── IBM1148.so
+│   │   ├── IBM1149.so
+│   │   ├── IBM1153.so
+│   │   ├── IBM1154.so
+│   │   ├── IBM1155.so
+│   │   ├── IBM1156.so
+│   │   ├── IBM1157.so
+│   │   ├── IBM1158.so
+│   │   ├── IBM1160.so
+│   │   ├── IBM1161.so
+│   │   ├── IBM1162.so
+│   │   ├── IBM1163.so
+│   │   ├── IBM1164.so
+│   │   ├── IBM1166.so
+│   │   ├── IBM1167.so
+│   │   ├── IBM12712.so
+│   │   ├── IBM1364.so
+│   │   ├── IBM1371.so
+│   │   ├── IBM1388.so
+│   │   ├── IBM1390.so
+│   │   ├── IBM1399.so
+│   │   ├── IBM16804.so
+│   │   ├── IBM256.so
+│   │   ├── IBM273.so
+│   │   ├── IBM274.so
+│   │   ├── IBM275.so
+│   │   ├── IBM277.so
+│   │   ├── IBM278.so
+│   │   ├── IBM280.so
+│   │   ├── IBM281.so
+│   │   ├── IBM284.so
+│   │   ├── IBM285.so
+│   │   ├── IBM290.so
+│   │   ├── IBM297.so
+│   │   ├── IBM420.so
+│   │   ├── IBM423.so
+│   │   ├── IBM424.so
+│   │   ├── IBM437.so
+│   │   ├── IBM4517.so
+│   │   ├── IBM4899.so
+│   │   ├── IBM4909.so
+│   │   ├── IBM4971.so
+│   │   ├── IBM500.so
+│   │   ├── IBM5347.so
+│   │   ├── IBM803.so
+│   │   ├── IBM850.so
+│   │   ├── IBM851.so
+│   │   ├── IBM852.so
+│   │   ├── IBM855.so
+│   │   ├── IBM856.so
+│   │   ├── IBM857.so
+│   │   ├── IBM860.so
+│   │   ├── IBM861.so
+│   │   ├── IBM862.so
+│   │   ├── IBM863.so
+│   │   ├── IBM864.so
+│   │   ├── IBM865.so
+│   │   ├── IBM866NAV.so
+│   │   ├── IBM866.so
+│   │   ├── IBM868.so
+│   │   ├── IBM869.so
+│   │   ├── IBM870.so
+│   │   ├── IBM871.so
+│   │   ├── IBM874.so
+│   │   ├── IBM875.so
+│   │   ├── IBM880.so
+│   │   ├── IBM891.so
+│   │   ├── IBM901.so
+│   │   ├── IBM902.so
+│   │   ├── IBM9030.so
+│   │   ├── IBM903.so
+│   │   ├── IBM904.so
+│   │   ├── IBM905.so
+│   │   ├── IBM9066.so
+│   │   ├── IBM918.so
+│   │   ├── IBM921.so
+│   │   ├── IBM922.so
+│   │   ├── IBM930.so
+│   │   ├── IBM932.so
+│   │   ├── IBM933.so
+│   │   ├── IBM935.so
+│   │   ├── IBM937.so
+│   │   ├── IBM939.so
+│   │   ├── IBM943.so
+│   │   ├── IBM9448.so
+│   │   ├── IEC_P27-1.so
+│   │   ├── INIS-8.so
+│   │   ├── INIS-CYRILLIC.so
+│   │   ├── INIS.so
+│   │   ├── ISIRI-3342.so
+│   │   ├── ISO_10367-BOX.so
+│   │   ├── ISO_11548-1.so
+│   │   ├── ISO-2022-CN-EXT.so
+│   │   ├── ISO-2022-CN.so
+│   │   ├── ISO-2022-JP-3.so
+│   │   ├── ISO-2022-JP.so
+│   │   ├── ISO-2022-KR.so
+│   │   ├── ISO_2033.so
+│   │   ├── ISO_5427-EXT.so
+│   │   ├── ISO_5427.so
+│   │   ├── ISO_5428.so
+│   │   ├── ISO646.so
+│   │   ├── ISO_6937-2.so
+│   │   ├── ISO_6937.so
+│   │   ├── ISO8859-10.so
+│   │   ├── ISO8859-11.so
+│   │   ├── ISO8859-13.so
+│   │   ├── ISO8859-14.so
+│   │   ├── ISO8859-15.so
+│   │   ├── ISO8859-16.so
+│   │   ├── ISO8859-1.so
+│   │   ├── ISO8859-2.so
+│   │   ├── ISO8859-3.so
+│   │   ├── ISO8859-4.so
+│   │   ├── ISO8859-5.so
+│   │   ├── ISO8859-6.so
+│   │   ├── ISO8859-7.so
+│   │   ├── ISO8859-8.so
+│   │   ├── ISO8859-9E.so
+│   │   ├── ISO8859-9.so
+│   │   ├── ISO-IR-197.so
+│   │   ├── ISO-IR-209.so
+│   │   ├── JOHAB.so
+│   │   ├── KOI8-R.so
+│   │   ├── KOI8-RU.so
+│   │   ├── KOI-8.so
+│   │   ├── KOI8-T.so
+│   │   ├── KOI8-U.so
+│   │   ├── LATIN-GREEK-1.so
+│   │   ├── LATIN-GREEK.so
+│   │   ├── libCNS.so
+│   │   ├── libGB.so
+│   │   ├── libISOIR165.so
+│   │   ├── libJIS.so
+│   │   ├── libJISX0213.so
+│   │   ├── libKSC.so
+│   │   ├── MAC-CENTRALEUROPE.so
+│   │   ├── MACINTOSH.so
+│   │   ├── MAC-IS.so
+│   │   ├── MAC-SAMI.so
+│   │   ├── MAC-UK.so
+│   │   ├── MIK.so
+│   │   ├── NATS-DANO.so
+│   │   ├── NATS-SEFI.so
+│   │   ├── PT154.so
+│   │   ├── RK1048.so
+│   │   ├── SAMI-WS2.so
+│   │   ├── SHIFT_JISX0213.so
+│   │   ├── SJIS.so
+│   │   ├── T.61.so
+│   │   ├── TCVN5712-1.so
+│   │   ├── TIS-620.so
+│   │   ├── TSCII.so
+│   │   ├── UHC.so
+│   │   ├── UNICODE.so
+│   │   ├── UTF-16.so
+│   │   ├── UTF-32.so
+│   │   ├── UTF-7.so
+│   │   └── VISCII.so
+│   ├── gcrt1.o
+│   ├── ld-2.19.so
+│   ├── ld-linux.so.2 -> ld-2.19.so
+│   ├── libanl-2.19.so
+│   ├── libanl.a
+│   ├── libanl.so -> libanl.so.1
+│   ├── libanl.so.1 -> libanl-2.19.so
+│   ├── libBrokenLocale-2.19.so
+│   ├── libBrokenLocale.a
+│   ├── libBrokenLocale.so -> libBrokenLocale.so.1
+│   ├── libBrokenLocale.so.1 -> libBrokenLocale-2.19.so
+│   ├── libc-2.19.so
+│   ├── libc.a
+│   ├── libcidn-2.19.so
+│   ├── libcidn.so -> libcidn.so.1
+│   ├── libcidn.so.1 -> libcidn-2.19.so
+│   ├── libc_nonshared.a
+│   ├── libcrypt-2.19.so
+│   ├── libcrypt.a
+│   ├── libcrypt.so -> libcrypt.so.1
+│   ├── libcrypt.so.1 -> libcrypt-2.19.so
+│   ├── libc.so
+│   ├── libc.so.6 -> libc-2.19.so
+│   ├── libdl-2.19.so
+│   ├── libdl.a
+│   ├── libdl.so -> libdl.so.2
+│   ├── libdl.so.2 -> libdl-2.19.so
+│   ├── libg.a
+│   ├── libieee.a
+│   ├── libm-2.19.so
+│   ├── libm.a
+│   ├── libmcheck.a
+│   ├── libmemusage.so
+│   ├── libm.so -> libm.so.6
+│   ├── libm.so.6 -> libm-2.19.so
+│   ├── libnsl-2.19.so
+│   ├── libnsl.a
+│   ├── libnsl.so -> libnsl.so.1
+│   ├── libnsl.so.1 -> libnsl-2.19.so
+│   ├── libnss_compat-2.19.so
+│   ├── libnss_compat.so -> libnss_compat.so.2
+│   ├── libnss_compat.so.2 -> libnss_compat-2.19.so
+│   ├── libnss_db-2.19.so
+│   ├── libnss_db.so -> libnss_db.so.2
+│   ├── libnss_db.so.2 -> libnss_db-2.19.so
+│   ├── libnss_dns-2.19.so
+│   ├── libnss_dns.so -> libnss_dns.so.2
+│   ├── libnss_dns.so.2 -> libnss_dns-2.19.so
+│   ├── libnss_files-2.19.so
+│   ├── libnss_files.so -> libnss_files.so.2
+│   ├── libnss_files.so.2 -> libnss_files-2.19.so
+│   ├── libnss_hesiod-2.19.so
+│   ├── libnss_hesiod.so -> libnss_hesiod.so.2
+│   ├── libnss_hesiod.so.2 -> libnss_hesiod-2.19.so
+│   ├── libnss_nis-2.19.so
+│   ├── libnss_nisplus-2.19.so
+│   ├── libnss_nisplus.so -> libnss_nisplus.so.2
+│   ├── libnss_nisplus.so.2 -> libnss_nisplus-2.19.so
+│   ├── libnss_nis.so -> libnss_nis.so.2
+│   ├── libnss_nis.so.2 -> libnss_nis-2.19.so
+│   ├── libpcprofile.so
+│   ├── libpthread-2.19.so
+│   ├── libpthread.a
+│   ├── libpthread_nonshared.a
+│   ├── libpthread.so
+│   ├── libpthread.so.0 -> libpthread-2.19.so
+│   ├── libresolv-2.19.so
+│   ├── libresolv.a
+│   ├── libresolv.so -> libresolv.so.2
+│   ├── libresolv.so.2 -> libresolv-2.19.so
+│   ├── librpcsvc.a
+│   ├── librt-2.19.so
+│   ├── librt.a
+│   ├── librt.so -> librt.so.1
+│   ├── librt.so.1 -> librt-2.19.so
+│   ├── libSegFault.so
+│   ├── libthread_db-1.0.so
+│   ├── libthread_db.so -> libthread_db.so.1
+│   ├── libthread_db.so.1 -> libthread_db-1.0.so
+│   ├── libutil-2.19.so
+│   ├── libutil.a
+│   ├── libutil.so -> libutil.so.1
+│   ├── libutil.so.1 -> libutil-2.19.so
+│   ├── Mcrt1.o
+│   └── Scrt1.o
+├── libexec
+│   └── getconf
+│       ├── POSIX_V6_LP64_OFF64
+│       ├── POSIX_V7_LP64_OFF64
+│       └── XBS5_LP64_OFF64
+├── sbin
+│   ├── iconvconfig
+│   ├── ldconfig
+│   ├── nscd
+│   ├── sln
+│   ├── zdump
+│   └── zic
+├── share
+│   ├── i18n
+│   │   ├── charmaps
+│   │   │   ├── ANSI_X3.110-1983.gz
+│   │   │   ├── ANSI_X3.4-1968.gz
+│   │   │   ├── ARMSCII-8.gz
+│   │   │   ├── ASMO_449.gz
+│   │   │   ├── BIG5.gz
+│   │   │   ├── BIG5-HKSCS.gz
+│   │   │   ├── BRF.gz
+│   │   │   ├── BS_4730.gz
+│   │   │   ├── BS_VIEWDATA.gz
+│   │   │   ├── CP10007.gz
+│   │   │   ├── CP1125.gz
+│   │   │   ├── CP1250.gz
+│   │   │   ├── CP1251.gz
+│   │   │   ├── CP1252.gz
+│   │   │   ├── CP1253.gz
+│   │   │   ├── CP1254.gz
+│   │   │   ├── CP1255.gz
+│   │   │   ├── CP1256.gz
+│   │   │   ├── CP1257.gz
+│   │   │   ├── CP1258.gz
+│   │   │   ├── CP737.gz
+│   │   │   ├── CP770.gz
+│   │   │   ├── CP771.gz
+│   │   │   ├── CP772.gz
+│   │   │   ├── CP773.gz
+│   │   │   ├── CP774.gz
+│   │   │   ├── CP775.gz
+│   │   │   ├── CP949.gz
+│   │   │   ├── CSA_Z243.4-1985-1.gz
+│   │   │   ├── CSA_Z243.4-1985-2.gz
+│   │   │   ├── CSA_Z243.4-1985-GR.gz
+│   │   │   ├── CSN_369103.gz
+│   │   │   ├── CWI.gz
+│   │   │   ├── DEC-MCS.gz
+│   │   │   ├── DIN_66003.gz
+│   │   │   ├── DS_2089.gz
+│   │   │   ├── EBCDIC-AT-DE-A.gz
+│   │   │   ├── EBCDIC-AT-DE.gz
+│   │   │   ├── EBCDIC-CA-FR.gz
+│   │   │   ├── EBCDIC-DK-NO-A.gz
+│   │   │   ├── EBCDIC-DK-NO.gz
+│   │   │   ├── EBCDIC-ES-A.gz
+│   │   │   ├── EBCDIC-ES.gz
+│   │   │   ├── EBCDIC-ES-S.gz
+│   │   │   ├── EBCDIC-FI-SE-A.gz
+│   │   │   ├── EBCDIC-FI-SE.gz
+│   │   │   ├── EBCDIC-FR.gz
+│   │   │   ├── EBCDIC-IS-FRISS.gz
+│   │   │   ├── EBCDIC-IT.gz
+│   │   │   ├── EBCDIC-PT.gz
+│   │   │   ├── EBCDIC-UK.gz
+│   │   │   ├── EBCDIC-US.gz
+│   │   │   ├── ECMA-CYRILLIC.gz
+│   │   │   ├── ES2.gz
+│   │   │   ├── ES.gz
+│   │   │   ├── EUC-JISX0213.gz
+│   │   │   ├── EUC-JP.gz
+│   │   │   ├── EUC-JP-MS.gz
+│   │   │   ├── EUC-KR.gz
+│   │   │   ├── EUC-TW.gz
+│   │   │   ├── GB18030.gz
+│   │   │   ├── GB_1988-80.gz
+│   │   │   ├── GB2312.gz
+│   │   │   ├── GBK.gz
+│   │   │   ├── GEORGIAN-ACADEMY.gz
+│   │   │   ├── GEORGIAN-PS.gz
+│   │   │   ├── GOST_19768-74.gz
+│   │   │   ├── GREEK7.gz
+│   │   │   ├── GREEK7-OLD.gz
+│   │   │   ├── GREEK-CCITT.gz
+│   │   │   ├── HP-GREEK8.gz
+│   │   │   ├── HP-ROMAN8.gz
+│   │   │   ├── HP-ROMAN9.gz
+│   │   │   ├── HP-THAI8.gz
+│   │   │   ├── HP-TURKISH8.gz
+│   │   │   ├── IBM037.gz
+│   │   │   ├── IBM038.gz
+│   │   │   ├── IBM1004.gz
+│   │   │   ├── IBM1026.gz
+│   │   │   ├── IBM1047.gz
+│   │   │   ├── IBM1124.gz
+│   │   │   ├── IBM1129.gz
+│   │   │   ├── IBM1132.gz
+│   │   │   ├── IBM1133.gz
+│   │   │   ├── IBM1160.gz
+│   │   │   ├── IBM1161.gz
+│   │   │   ├── IBM1162.gz
+│   │   │   ├── IBM1163.gz
+│   │   │   ├── IBM1164.gz
+│   │   │   ├── IBM256.gz
+│   │   │   ├── IBM273.gz
+│   │   │   ├── IBM274.gz
+│   │   │   ├── IBM275.gz
+│   │   │   ├── IBM277.gz
+│   │   │   ├── IBM278.gz
+│   │   │   ├── IBM280.gz
+│   │   │   ├── IBM281.gz
+│   │   │   ├── IBM284.gz
+│   │   │   ├── IBM285.gz
+│   │   │   ├── IBM290.gz
+│   │   │   ├── IBM297.gz
+│   │   │   ├── IBM420.gz
+│   │   │   ├── IBM423.gz
+│   │   │   ├── IBM424.gz
+│   │   │   ├── IBM437.gz
+│   │   │   ├── IBM500.gz
+│   │   │   ├── IBM850.gz
+│   │   │   ├── IBM851.gz
+│   │   │   ├── IBM852.gz
+│   │   │   ├── IBM855.gz
+│   │   │   ├── IBM856.gz
+│   │   │   ├── IBM857.gz
+│   │   │   ├── IBM860.gz
+│   │   │   ├── IBM861.gz
+│   │   │   ├── IBM862.gz
+│   │   │   ├── IBM863.gz
+│   │   │   ├── IBM864.gz
+│   │   │   ├── IBM865.gz
+│   │   │   ├── IBM866.gz
+│   │   │   ├── IBM866NAV.gz
+│   │   │   ├── IBM868.gz
+│   │   │   ├── IBM869.gz
+│   │   │   ├── IBM870.gz
+│   │   │   ├── IBM871.gz
+│   │   │   ├── IBM874.gz
+│   │   │   ├── IBM875.gz
+│   │   │   ├── IBM880.gz
+│   │   │   ├── IBM891.gz
+│   │   │   ├── IBM903.gz
+│   │   │   ├── IBM904.gz
+│   │   │   ├── IBM905.gz
+│   │   │   ├── IBM918.gz
+│   │   │   ├── IBM922.gz
+│   │   │   ├── IEC_P27-1.gz
+│   │   │   ├── INIS-8.gz
+│   │   │   ├── INIS-CYRILLIC.gz
+│   │   │   ├── INIS.gz
+│   │   │   ├── INVARIANT.gz
+│   │   │   ├── ISIRI-3342.gz
+│   │   │   ├── ISO_10367-BOX.gz
+│   │   │   ├── ISO_10646.gz
+│   │   │   ├── ISO_11548-1.gz
+│   │   │   ├── ISO_2033-1983.gz
+│   │   │   ├── ISO_5427-EXT.gz
+│   │   │   ├── ISO_5427.gz
+│   │   │   ├── ISO_5428.gz
+│   │   │   ├── ISO_646.BASIC.gz
+│   │   │   ├── ISO_646.IRV.gz
+│   │   │   ├── ISO_6937-2-25.gz
+│   │   │   ├── ISO_6937-2-ADD.gz
+│   │   │   ├── ISO_6937.gz
+│   │   │   ├── ISO-8859-10.gz
+│   │   │   ├── ISO-8859-11.gz
+│   │   │   ├── ISO-8859-13.gz
+│   │   │   ├── ISO-8859-14.gz
+│   │   │   ├── ISO-8859-15.gz
+│   │   │   ├── ISO-8859-16.gz
+│   │   │   ├── ISO_8859-1,GL.gz
+│   │   │   ├── ISO-8859-1.gz
+│   │   │   ├── ISO-8859-2.gz
+│   │   │   ├── ISO-8859-3.gz
+│   │   │   ├── ISO-8859-4.gz
+│   │   │   ├── ISO-8859-5.gz
+│   │   │   ├── ISO-8859-6.gz
+│   │   │   ├── ISO-8859-7.gz
+│   │   │   ├── ISO-8859-8.gz
+│   │   │   ├── ISO-8859-9E.gz
+│   │   │   ├── ISO-8859-9.gz
+│   │   │   ├── ISO_8859-SUPP.gz
+│   │   │   ├── ISO-IR-197.gz
+│   │   │   ├── ISO-IR-209.gz
+│   │   │   ├── ISO-IR-90.gz
+│   │   │   ├── IT.gz
+│   │   │   ├── JIS_C6220-1969-JP.gz
+│   │   │   ├── JIS_C6220-1969-RO.gz
+│   │   │   ├── JIS_C6229-1984-A.gz
+│   │   │   ├── JIS_C6229-1984-B-ADD.gz
+│   │   │   ├── JIS_C6229-1984-B.gz
+│   │   │   ├── JIS_C6229-1984-HAND-ADD.gz
+│   │   │   ├── JIS_C6229-1984-HAND.gz
+│   │   │   ├── JIS_C6229-1984-KANA.gz
+│   │   │   ├── JIS_X0201.gz
+│   │   │   ├── JOHAB.gz
+│   │   │   ├── JUS_I.B1.002.gz
+│   │   │   ├── JUS_I.B1.003-MAC.gz
+│   │   │   ├── JUS_I.B1.003-SERB.gz
+│   │   │   ├── KOI-8.gz
+│   │   │   ├── KOI8-R.gz
+│   │   │   ├── KOI8-RU.gz
+│   │   │   ├── KOI8-T.gz
+│   │   │   ├── KOI8-U.gz
+│   │   │   ├── KSC5636.gz
+│   │   │   ├── LATIN-GREEK-1.gz
+│   │   │   ├── LATIN-GREEK.gz
+│   │   │   ├── MAC-CENTRALEUROPE.gz
+│   │   │   ├── MAC-CYRILLIC.gz
+│   │   │   ├── MACINTOSH.gz
+│   │   │   ├── MAC-IS.gz
+│   │   │   ├── MAC-SAMI.gz
+│   │   │   ├── MAC-UK.gz
+│   │   │   ├── MIK.gz
+│   │   │   ├── MSZ_7795.3.gz
+│   │   │   ├── NATS-DANO-ADD.gz
+│   │   │   ├── NATS-DANO.gz
+│   │   │   ├── NATS-SEFI-ADD.gz
+│   │   │   ├── NATS-SEFI.gz
+│   │   │   ├── NC_NC00-10.gz
+│   │   │   ├── NEXTSTEP.gz
+│   │   │   ├── NF_Z_62-010_1973.gz
+│   │   │   ├── NF_Z_62-010.gz
+│   │   │   ├── NS_4551-1.gz
+│   │   │   ├── NS_4551-2.gz
+│   │   │   ├── PT154.gz
+│   │   │   ├── PT2.gz
+│   │   │   ├── PT.gz
+│   │   │   ├── RK1048.gz
+│   │   │   ├── SAMI.gz
+│   │   │   ├── SAMI-WS2.gz
+│   │   │   ├── SEN_850200_B.gz
+│   │   │   ├── SEN_850200_C.gz
+│   │   │   ├── SHIFT_JIS.gz
+│   │   │   ├── SHIFT_JISX0213.gz
+│   │   │   ├── T.101-G2.gz
+│   │   │   ├── T.61-7BIT.gz
+│   │   │   ├── T.61-8BIT.gz
+│   │   │   ├── TCVN5712-1.gz
+│   │   │   ├── TIS-620.gz
+│   │   │   ├── TSCII.gz
+│   │   │   ├── UTF-8.gz
+│   │   │   ├── VIDEOTEX-SUPPL.gz
+│   │   │   ├── VISCII.gz
+│   │   │   └── WINDOWS-31J.gz
+│   │   └── locales
+│   │       ├── aa_DJ
+│   │       ├── aa_ER
+│   │       ├── aa_ER@saaho
+│   │       ├── aa_ET
+│   │       ├── af_ZA
+│   │       ├── ak_GH
+│   │       ├── am_ET
+│   │       ├── an_ES
+│   │       ├── anp_IN
+│   │       ├── ar_AE
+│   │       ├── ar_BH
+│   │       ├── ar_DZ
+│   │       ├── ar_EG
+│   │       ├── ar_IN
+│   │       ├── ar_IQ
+│   │       ├── ar_JO
+│   │       ├── ar_KW
+│   │       ├── ar_LB
+│   │       ├── ar_LY
+│   │       ├── ar_MA
+│   │       ├── ar_OM
+│   │       ├── ar_QA
+│   │       ├── ar_SA
+│   │       ├── ar_SD
+│   │       ├── ar_SS
+│   │       ├── ar_SY
+│   │       ├── ar_TN
+│   │       ├── ar_YE
+│   │       ├── as_IN
+│   │       ├── ast_ES
+│   │       ├── ayc_PE
+│   │       ├── az_AZ
+│   │       ├── be_BY
+│   │       ├── be_BY@latin
+│   │       ├── bem_ZM
+│   │       ├── ber_DZ
+│   │       ├── ber_MA
+│   │       ├── bg_BG
+│   │       ├── bho_IN
+│   │       ├── bn_BD
+│   │       ├── bn_IN
+│   │       ├── bo_CN
+│   │       ├── bo_IN
+│   │       ├── br_FR
+│   │       ├── br_FR@euro
+│   │       ├── brx_IN
+│   │       ├── bs_BA
+│   │       ├── byn_ER
+│   │       ├── ca_AD
+│   │       ├── ca_ES
+│   │       ├── ca_ES@euro
+│   │       ├── ca_FR
+│   │       ├── ca_IT
+│   │       ├── cmn_TW
+│   │       ├── crh_UA
+│   │       ├── csb_PL
+│   │       ├── cs_CZ
+│   │       ├── cv_RU
+│   │       ├── cy_GB
+│   │       ├── da_DK
+│   │       ├── de_AT
+│   │       ├── de_AT@euro
+│   │       ├── de_BE
+│   │       ├── de_BE@euro
+│   │       ├── de_CH
+│   │       ├── de_DE
+│   │       ├── de_DE@euro
+│   │       ├── de_LU
+│   │       ├── de_LU@euro
+│   │       ├── doi_IN
+│   │       ├── dv_MV
+│   │       ├── dz_BT
+│   │       ├── el_CY
+│   │       ├── el_GR
+│   │       ├── el_GR@euro
+│   │       ├── en_AG
+│   │       ├── en_AU
+│   │       ├── en_BW
+│   │       ├── en_CA
+│   │       ├── en_DK
+│   │       ├── en_GB
+│   │       ├── en_HK
+│   │       ├── en_IE
+│   │       ├── en_IE@euro
+│   │       ├── en_IN
+│   │       ├── en_NG
+│   │       ├── en_NZ
+│   │       ├── en_PH
+│   │       ├── en_SG
+│   │       ├── en_US
+│   │       ├── en_ZA
+│   │       ├── en_ZM
+│   │       ├── en_ZW
+│   │       ├── es_AR
+│   │       ├── es_BO
+│   │       ├── es_CL
+│   │       ├── es_CO
+│   │       ├── es_CR
+│   │       ├── es_CU
+│   │       ├── es_DO
+│   │       ├── es_EC
+│   │       ├── es_ES
+│   │       ├── es_ES@euro
+│   │       ├── es_GT
+│   │       ├── es_HN
+│   │       ├── es_MX
+│   │       ├── es_NI
+│   │       ├── es_PA
+│   │       ├── es_PE
+│   │       ├── es_PR
+│   │       ├── es_PY
+│   │       ├── es_SV
+│   │       ├── es_US
+│   │       ├── es_UY
+│   │       ├── es_VE
+│   │       ├── et_EE
+│   │       ├── eu_ES
+│   │       ├── eu_ES@euro
+│   │       ├── fa_IR
+│   │       ├── ff_SN
+│   │       ├── fi_FI
+│   │       ├── fi_FI@euro
+│   │       ├── fil_PH
+│   │       ├── fo_FO
+│   │       ├── fr_BE
+│   │       ├── fr_BE@euro
+│   │       ├── fr_CA
+│   │       ├── fr_CH
+│   │       ├── fr_FR
+│   │       ├── fr_FR@euro
+│   │       ├── fr_LU
+│   │       ├── fr_LU@euro
+│   │       ├── fur_IT
+│   │       ├── fy_DE
+│   │       ├── fy_NL
+│   │       ├── ga_IE
+│   │       ├── ga_IE@euro
+│   │       ├── gd_GB
+│   │       ├── gez_ER
+│   │       ├── gez_ER@abegede
+│   │       ├── gez_ET
+│   │       ├── gez_ET@abegede
+│   │       ├── gl_ES
+│   │       ├── gl_ES@euro
+│   │       ├── gu_IN
+│   │       ├── gv_GB
+│   │       ├── hak_TW
+│   │       ├── ha_NG
+│   │       ├── he_IL
+│   │       ├── hi_IN
+│   │       ├── hne_IN
+│   │       ├── hr_HR
+│   │       ├── hsb_DE
+│   │       ├── ht_HT
+│   │       ├── hu_HU
+│   │       ├── hy_AM
+│   │       ├── i18n
+│   │       ├── ia_FR
+│   │       ├── id_ID
+│   │       ├── ig_NG
+│   │       ├── ik_CA
+│   │       ├── is_IS
+│   │       ├── iso14651_t1
+│   │       ├── iso14651_t1_common
+│   │       ├── iso14651_t1_pinyin
+│   │       ├── it_CH
+│   │       ├── it_IT
+│   │       ├── it_IT@euro
+│   │       ├── iu_CA
+│   │       ├── iw_IL
+│   │       ├── ja_JP
+│   │       ├── ka_GE
+│   │       ├── kk_KZ
+│   │       ├── kl_GL
+│   │       ├── km_KH
+│   │       ├── kn_IN
+│   │       ├── kok_IN
+│   │       ├── ko_KR
+│   │       ├── ks_IN
+│   │       ├── ks_IN@devanagari
+│   │       ├── ku_TR
+│   │       ├── kw_GB
+│   │       ├── ky_KG
+│   │       ├── lb_LU
+│   │       ├── lg_UG
+│   │       ├── li_BE
+│   │       ├── lij_IT
+│   │       ├── li_NL
+│   │       ├── lo_LA
+│   │       ├── lt_LT
+│   │       ├── lv_LV
+│   │       ├── lzh_TW
+│   │       ├── mag_IN
+│   │       ├── mai_IN
+│   │       ├── mg_MG
+│   │       ├── mhr_RU
+│   │       ├── mi_NZ
+│   │       ├── mk_MK
+│   │       ├── ml_IN
+│   │       ├── mni_IN
+│   │       ├── mn_MN
+│   │       ├── mr_IN
+│   │       ├── ms_MY
+│   │       ├── mt_MT
+│   │       ├── my_MM
+│   │       ├── nan_TW
+│   │       ├── nan_TW@latin
+│   │       ├── nb_NO
+│   │       ├── nds_DE
+│   │       ├── nds_NL
+│   │       ├── ne_NP
+│   │       ├── nhn_MX
+│   │       ├── niu_NU
+│   │       ├── niu_NZ
+│   │       ├── nl_AW
+│   │       ├── nl_BE
+│   │       ├── nl_BE@euro
+│   │       ├── nl_NL
+│   │       ├── nl_NL@euro
+│   │       ├── nn_NO
+│   │       ├── nr_ZA
+│   │       ├── nso_ZA
+│   │       ├── oc_FR
+│   │       ├── om_ET
+│   │       ├── om_KE
+│   │       ├── or_IN
+│   │       ├── os_RU
+│   │       ├── pa_IN
+│   │       ├── pap_AN
+│   │       ├── pap_AW
+│   │       ├── pap_CW
+│   │       ├── pa_PK
+│   │       ├── pl_PL
+│   │       ├── POSIX
+│   │       ├── ps_AF
+│   │       ├── pt_BR
+│   │       ├── pt_PT
+│   │       ├── pt_PT@euro
+│   │       ├── quz_PE
+│   │       ├── ro_RO
+│   │       ├── ru_RU
+│   │       ├── ru_UA
+│   │       ├── rw_RW
+│   │       ├── sa_IN
+│   │       ├── sat_IN
+│   │       ├── sc_IT
+│   │       ├── sd_IN
+│   │       ├── sd_IN@devanagari
+│   │       ├── se_NO
+│   │       ├── shs_CA
+│   │       ├── sid_ET
+│   │       ├── si_LK
+│   │       ├── sk_SK
+│   │       ├── sl_SI
+│   │       ├── so_DJ
+│   │       ├── so_ET
+│   │       ├── so_KE
+│   │       ├── so_SO
+│   │       ├── sq_AL
+│   │       ├── sq_MK
+│   │       ├── sr_ME
+│   │       ├── sr_RS
+│   │       ├── sr_RS@latin
+│   │       ├── ss_ZA
+│   │       ├── st_ZA
+│   │       ├── sv_FI
+│   │       ├── sv_FI@euro
+│   │       ├── sv_SE
+│   │       ├── sw_KE
+│   │       ├── sw_TZ
+│   │       ├── szl_PL
+│   │       ├── ta_IN
+│   │       ├── ta_LK
+│   │       ├── te_IN
+│   │       ├── tg_TJ
+│   │       ├── the_NP
+│   │       ├── th_TH
+│   │       ├── ti_ER
+│   │       ├── ti_ET
+│   │       ├── tig_ER
+│   │       ├── tk_TM
+│   │       ├── tl_PH
+│   │       ├── tn_ZA
+│   │       ├── translit_circle
+│   │       ├── translit_cjk_compat
+│   │       ├── translit_cjk_variants
+│   │       ├── translit_combining
+│   │       ├── translit_compat
+│   │       ├── translit_font
+│   │       ├── translit_fraction
+│   │       ├── translit_hangul
+│   │       ├── translit_narrow
+│   │       ├── translit_neutral
+│   │       ├── translit_small
+│   │       ├── translit_wide
+│   │       ├── tr_CY
+│   │       ├── tr_TR
+│   │       ├── ts_ZA
+│   │       ├── tt_RU
+│   │       ├── tt_RU@iqtelif
+│   │       ├── ug_CN
+│   │       ├── uk_UA
+│   │       ├── unm_US
+│   │       ├── ur_IN
+│   │       ├── ur_PK
+│   │       ├── uz_UZ
+│   │       ├── uz_UZ@cyrillic
+│   │       ├── ve_ZA
+│   │       ├── vi_VN
+│   │       ├── wa_BE
+│   │       ├── wa_BE@euro
+│   │       ├── wae_CH
+│   │       ├── wal_ET
+│   │       ├── wo_SN
+│   │       ├── xh_ZA
+│   │       ├── yi_US
+│   │       ├── yo_NG
+│   │       ├── yue_HK
+│   │       ├── zh_CN
+│   │       ├── zh_HK
+│   │       ├── zh_SG
+│   │       ├── zh_TW
+│   │       └── zu_ZA
+│   ├── info
+│   │   ├── dir
+│   │   ├── libc.info
+│   │   ├── libc.info-1
+│   │   ├── libc.info-10
+│   │   ├── libc.info-11
+│   │   ├── libc.info-12
+│   │   ├── libc.info-13
+│   │   ├── libc.info-14
+│   │   ├── libc.info-2
+│   │   ├── libc.info-3
+│   │   ├── libc.info-4
+│   │   ├── libc.info-5
+│   │   ├── libc.info-6
+│   │   ├── libc.info-7
+│   │   ├── libc.info-8
+│   │   └── libc.info-9
+│   └── locale
+│       ├── be
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── bg
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── ca
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── cs
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── da
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── de
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── el
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── en_GB
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── eo
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── es
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── fi
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── fr
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── gl
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── hr
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── hu
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── ia
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── id
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── it
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── ja
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── ko
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── locale.alias
+│       ├── lt
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── nb
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── nl
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── pl
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── pt_BR
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── ru
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── rw
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── sk
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── sl
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── sv
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── tr
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── uk
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── vi
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       ├── zh_CN
+│       │   └── LC_MESSAGES
+│       │       └── libc.mo
+│       └── zh_TW
+│           └── LC_MESSAGES
+│               └── libc.mo
+└── var
+    └── db
+        └── Makefile
+
+140 directories, 2104 files

@@ -1,0 +1,10 @@
+libraries
+
+  /home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/lib/gcc/{CLFS_TARGET}/4.8.3/
+/home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/lib/gcc/
+/home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/{CLFS_TARGET}/lib/{CLFS_TARGET}/4.8.3/
+/home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/{CLFS_TARGET}/lib/
+/home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/tools/lib/{CLFS_TARGET}/4.8.3/
+/home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/tools/lib/
+/home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/{CLFS_TARGET}/lib/
+/home/bert/build_qemu_images/clfs_cross_tools/system/{TARGET_SYSTEM}/tools/lib/

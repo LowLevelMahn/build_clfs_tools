@@ -1,0 +1,15 @@
+make  all-recursive
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+Making all in .
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+  CC     glib-snippet.o
+  CC     pkg.o
+  CC     parse.o
+  CC     main.o
+  CCLD   pkg-config
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'
+Making all in check
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build/check'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build/check'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_8_pkg-config-lite-0.28-1-build'

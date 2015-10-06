@@ -1,0 +1,69 @@
+Making install in doc
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/doc'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/cross-tools/share/doc/mpfr'
+ /usr/bin/install -c -m 644 ../../mpfr-3.1.2/doc/FAQ.html '/cross-tools/share/doc/mpfr'
+ /bin/mkdir -p '/cross-tools/share/info'
+ /usr/bin/install -c -m 644 ../../mpfr-3.1.2/doc/mpfr.info '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/mpfr.info'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/doc'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/doc'
+Making install in src
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/src'
+make  install-am
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/src'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/src'
+ /bin/mkdir -p '/cross-tools/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libmpfr.la '/cross-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libmpfr.so.4.1.2 /cross-tools/lib/libmpfr.so.4.1.2
+libtool: install: (cd /cross-tools/lib && { ln -s -f libmpfr.so.4.1.2 libmpfr.so.4 || { rm -f libmpfr.so.4 && ln -s libmpfr.so.4.1.2 libmpfr.so.4; }; })
+libtool: install: (cd /cross-tools/lib && { ln -s -f libmpfr.so.4.1.2 libmpfr.so || { rm -f libmpfr.so && ln -s libmpfr.so.4.1.2 libmpfr.so; }; })
+libtool: install: /usr/bin/install -c .libs/libmpfr.lai /cross-tools/lib/libmpfr.la
+libtool: finish: PATH="/cross-tools/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /cross-tools/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /cross-tools/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/cross-tools/include'
+ /usr/bin/install -c -m 644 ../../mpfr-3.1.2/src/mpfr.h ../../mpfr-3.1.2/src/mpf2mpfr.h '/cross-tools/include'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/src'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/src'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/src'
+Making install in tests
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tests'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tests'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tests'
+Making install in tune
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tune'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tune'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tune'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build/tune'
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/cross-tools/share/doc/mpfr'
+ /bin/mkdir -p '/cross-tools/share/doc/mpfr/examples'
+ /usr/bin/install -c -m 644  ../mpfr-3.1.2/examples/ReadMe ../mpfr-3.1.2/examples/divworst.c ../mpfr-3.1.2/examples/rndo-add.c ../mpfr-3.1.2/examples/sample.c ../mpfr-3.1.2/examples/version.c '/cross-tools/share/doc/mpfr/examples'
+ /usr/bin/install -c -m 644  ../mpfr-3.1.2/AUTHORS ../mpfr-3.1.2/BUGS ../mpfr-3.1.2/COPYING ../mpfr-3.1.2/COPYING.LESSER ../mpfr-3.1.2/NEWS ../mpfr-3.1.2/TODO '/cross-tools/share/doc/mpfr/.'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/sparc64-64/sources/step_10_mpfr-3.1.2-build'

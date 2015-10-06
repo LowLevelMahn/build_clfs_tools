@@ -1,0 +1,224 @@
+make  install-recursive
+make[1]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'
+Making install in tests
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests'
+Making install in .
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests'
+Making install in devel
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/devel'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/devel'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/devel'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/devel'
+Making install in mpn
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpn'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpn'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpn'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpn'
+Making install in mpz
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpz'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpz'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpz'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpz'
+Making install in mpq
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpq'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpq'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpq'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpq'
+Making install in mpf
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpf'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpf'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpf'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/mpf'
+Making install in rand
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/rand'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/rand'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/rand'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/rand'
+Making install in misc
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/misc'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/misc'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/misc'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/misc'
+Making install in cxx
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/cxx'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/cxx'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/cxx'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests/cxx'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tests'
+Making install in mpn
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpn'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpn'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpn'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpn'
+Making install in mpz
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpz'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpz'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpz'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpz'
+Making install in mpq
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpq'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpq'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpq'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpq'
+Making install in mpf
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpf'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpf'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/mpf'
+Making install in printf
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/printf'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/printf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/printf'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/printf'
+Making install in scanf
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/scanf'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/scanf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/scanf'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/scanf'
+Making install in rand
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/rand'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/rand'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/rand'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/rand'
+Making install in cxx
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/cxx'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/cxx'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/cxx'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/cxx'
+Making install in demos
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos'
+Making install in calc
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/calc'
+make  install-am
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/calc'
+make[5]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/calc'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/calc'
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/calc'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/calc'
+Making install in expr
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/expr'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/expr'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/expr'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos/expr'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos'
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/demos'
+Making install in tune
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tune'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tune'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tune'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/tune'
+Making install in doc
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/doc'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/cross-tools/share/info'
+ /usr/bin/install -c -m 644 ../../gmp-6.0.0/doc/gmp.info ../../gmp-6.0.0/doc/gmp.info-1 ../../gmp-6.0.0/doc/gmp.info-2 '/cross-tools/share/info'
+ install-info --info-dir='/cross-tools/share/info' '/cross-tools/share/info/gmp.info'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/doc'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/doc'
+make[2]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'
+make[3]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'
+ /bin/mkdir -p '/cross-tools/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libgmp.la libgmpxx.la '/cross-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libgmp.so.10.2.0 /cross-tools/lib/libgmp.so.10.2.0
+libtool: install: (cd /cross-tools/lib && { ln -s -f libgmp.so.10.2.0 libgmp.so.10 || { rm -f libgmp.so.10 && ln -s libgmp.so.10.2.0 libgmp.so.10; }; })
+libtool: install: (cd /cross-tools/lib && { ln -s -f libgmp.so.10.2.0 libgmp.so || { rm -f libgmp.so && ln -s libgmp.so.10.2.0 libgmp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgmp.lai /cross-tools/lib/libgmp.la
+libtool: install: warning: relinking `libgmpxx.la'
+libtool: install: (cd /home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build; /bin/bash /home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build/libtool  --tag CXX --mode=relink g++ -O2 -pedantic -fomit-frame-pointer -m64 -mtune=core2 -march=core2 -version-info 8:0:4 -o libgmpxx.la -rpath /cross-tools/lib dummy.lo cxx/isfuns.lo cxx/ismpf.lo cxx/ismpq.lo cxx/ismpz.lo cxx/ismpznw.lo cxx/limits.lo cxx/osdoprnti.lo cxx/osfuns.lo cxx/osmpf.lo cxx/osmpq.lo cxx/osmpz.lo libgmp.la )
+libtool: relink: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbeginS.o  .libs/dummy.o cxx/.libs/isfuns.o cxx/.libs/ismpf.o cxx/.libs/ismpq.o cxx/.libs/ismpz.o cxx/.libs/ismpznw.o cxx/.libs/limits.o cxx/.libs/osdoprnti.o cxx/.libs/osfuns.o cxx/.libs/osmpf.o cxx/.libs/osmpq.o cxx/.libs/osmpz.o   -Wl,-rpath -Wl,/cross-tools/lib -L/cross-tools/lib -lgmp -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o  -O2 -m64 -mtune=core2 -march=core2   -Wl,-soname -Wl,libgmpxx.so.4 -o .libs/libgmpxx.so.4.4.0
+libtool: install: /usr/bin/install -c .libs/libgmpxx.so.4.4.0T /cross-tools/lib/libgmpxx.so.4.4.0
+libtool: install: (cd /cross-tools/lib && { ln -s -f libgmpxx.so.4.4.0 libgmpxx.so.4 || { rm -f libgmpxx.so.4 && ln -s libgmpxx.so.4.4.0 libgmpxx.so.4; }; })
+libtool: install: (cd /cross-tools/lib && { ln -s -f libgmpxx.so.4.4.0 libgmpxx.so || { rm -f libgmpxx.so && ln -s libgmpxx.so.4.4.0 libgmpxx.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgmpxx.lai /cross-tools/lib/libgmpxx.la
+libtool: finish: PATH="/cross-tools/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /cross-tools/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /cross-tools/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/cross-tools/include'
+ /usr/bin/install -c -m 644 gmp.h '/cross-tools/include'
+ /bin/mkdir -p '/cross-tools/include'
+ /usr/bin/install -c -m 644 ../gmp-6.0.0/gmpxx.h '/cross-tools/include'
+make  install-data-hook
+make[4]: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'
+
++-------------------------------------------------------------+
+| CAUTION:                                                    |
+|                                                             |
+| If you have not already run "make check", then we strongly  |
+| recommend you do so.                                        |
+|                                                             |
+| GMP has been carefully tested by its authors, but compilers |
+| are all too often released with serious bugs.  GMP tends to |
+| explore interesting corners in compilers and has hit bugs   |
+| on quite a few occasions.                                   |
+|                                                             |
++-------------------------------------------------------------+
+
+make[4]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'
+make[3]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'
+make[2]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'
+make[1]: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/alpha/sources/step_9_gmp-6.0.0-build'

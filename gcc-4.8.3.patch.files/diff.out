@@ -1,0 +1,81 @@
+diff -r org/config/aarch64/aarch64-linux.h patched/config/aarch64/aarch64-linux.h
+24c24
+< #define GLIBC_DYNAMIC_LINKER "/lib/ld-linux-aarch64.so.1"
+---
+> #define GLIBC_DYNAMIC_LINKER "/tools/lib/ld-linux-aarch64.so.1"
+diff -r org/config/aarch64/t-aarch64-linux patched/config/aarch64/t-aarch64-linux
+25c25
+< MULTILIB_OSDIRNAMES = .=../lib64$(call if_multiarch,:aarch64$(AARCH_BE)-linux-gnu)
+---
+> MULTILIB_OSDIRNAMES = .=../lib$(call if_multiarch,:aarch64$(AARCH_BE)-linux-gnu)
+diff -r org/config/alpha/linux-elf.h patched/config/alpha/linux-elf.h
+26,27c26,27
+< #define GLIBC_DYNAMIC_LINKER	"/lib/ld-linux.so.2"
+< #define UCLIBC_DYNAMIC_LINKER "/lib/ld-uClibc.so.0"
+---
+> #define GLIBC_DYNAMIC_LINKER	"/tools/lib/ld-linux.so.2"
+> #define UCLIBC_DYNAMIC_LINKER "/tools/lib/ld-uClibc.so.0"
+diff -r org/config/linux.h patched/config/linux.h
+76,79c76,79
+< #define UCLIBC_DYNAMIC_LINKER "/lib/ld-uClibc.so.0"
+< #define UCLIBC_DYNAMIC_LINKER32 "/lib/ld-uClibc.so.0"
+< #define UCLIBC_DYNAMIC_LINKER64 "/lib/ld64-uClibc.so.0"
+< #define UCLIBC_DYNAMIC_LINKERX32 "/lib/ldx32-uClibc.so.0"
+---
+> #define UCLIBC_DYNAMIC_LINKER "/tools/lib/ld-uClibc.so.0"
+> #define UCLIBC_DYNAMIC_LINKER32 "/tools/lib/ld-uClibc.so.0"
+> #define UCLIBC_DYNAMIC_LINKER64 "/tools/lib/ld64-uClibc.so.0"
+> #define UCLIBC_DYNAMIC_LINKERX32 "/tools/lib/ldx32-uClibc.so.0"
+109a110,115
+> 
+> #undef STANDARD_STARTFILE_PREFIX_1
+> #define STANDARD_STARTFILE_PREFIX_1 "/tools/lib/"
+> 
+> #undef STANDARD_STARTFILE_PREFIX_2
+> #define STANDARD_STARTFILE_PREFIX_2 ""
+diff -r org/config/mips/linux64.h patched/config/mips/linux64.h
+25,28c25,28
+< #define GLIBC_DYNAMIC_LINKER32 "/lib/ld.so.1"
+< #define GLIBC_DYNAMIC_LINKER64 "/lib64/ld.so.1"
+< #define GLIBC_DYNAMIC_LINKERN32 "/lib32/ld.so.1"
+< #define UCLIBC_DYNAMIC_LINKERN32 "/lib32/ld-uClibc.so.0"
+---
+> #define GLIBC_DYNAMIC_LINKER32 "/tools/lib/ld.so.1"
+> #define GLIBC_DYNAMIC_LINKER64 "/tools/lib64/ld.so.1"
+> #define GLIBC_DYNAMIC_LINKERN32 "/tools/lib32/ld.so.1"
+> #define UCLIBC_DYNAMIC_LINKERN32 "/tools/lib32/ld-uClibc.so.0"
+diff -r org/config/mips/linux.h patched/config/mips/linux.h
+20c20
+< #define GLIBC_DYNAMIC_LINKER "/lib/ld.so.1"
+---
+> #define GLIBC_DYNAMIC_LINKER "/tools/lib/ld.so.1"
+diff -r org/config/mips/t-linux64 patched/config/mips/t-linux64
+25,26c25,26
+< 	../lib$(call if_multiarch,:mips$(MIPS_EL)-linux-gnu$(MIPS_SOFT)) \
+< 	../lib64$(call if_multiarch,:mips64$(MIPS_EL)-linux-gnuabi64$(MIPS_SOFT))
+---
+> 	../lib32$(call if_multiarch,:mips$(MIPS_EL)-linux-gnu$(MIPS_SOFT)) \
+> 	../lib$(call if_multiarch,:mips64$(MIPS_EL)-linux-gnuabi64$(MIPS_SOFT))
+diff -r org/config/sparc/linux64.h patched/config/sparc/linux64.h
+95,96c95,96
+< #define GLIBC_DYNAMIC_LINKER32 "/lib/ld-linux.so.2"
+< #define GLIBC_DYNAMIC_LINKER64 "/lib64/ld-linux.so.2"
+---
+> #define GLIBC_DYNAMIC_LINKER32 "/tools/lib32/ld-linux.so.2"
+> #define GLIBC_DYNAMIC_LINKER64 "/tools/lib/ld-linux.so.2"
+204c204
+< #define LINK_SPEC "-m elf64_sparc -Y P,%R/usr/lib64 %{shared:-shared} \
+---
+> #define LINK_SPEC "-m elf64_sparc -Y P,%R/tools/lib %{shared:-shared} \
+diff -r org/config/sparc/linux.h patched/config/sparc/linux.h
+86c86
+< #define GLIBC_DYNAMIC_LINKER "/lib/ld-linux.so.2"
+---
+> #define GLIBC_DYNAMIC_LINKER "/tools/lib/ld-linux.so.2"
+diff -r org/config/sparc/t-linux64 patched/config/sparc/t-linux64
+28,29c28,29
+< MULTILIB_OSDIRNAMES = ../lib64$(call if_multiarch,:sparc64-linux-gnu)
+< MULTILIB_OSDIRNAMES += $(if $(wildcard $(shell echo $(SYSTEM_HEADER_DIR))/../../usr/lib32),../lib32,../lib)$(call if_multiarch,:sparc-linux-gnu)
+---
+> MULTILIB_OSDIRNAMES = ../lib$(call if_multiarch,:sparc64-linux-gnu)
+> MULTILIB_OSDIRNAMES += $(if $(wildcard $(shell echo $(SYSTEM_HEADER_DIR))/../../usr/lib32),../lib32,../lib32)$(call if_multiarch,:sparc-linux-gnu)

@@ -1,0 +1,16 @@
+make: Entering directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_7_ncurses-5.9-build/include'
+cat curses.head >curses.h
+AWK=mawk sh ../../ncurses-5.9/include/MKkey_defs.sh ../../ncurses-5.9/include/Caps >>curses.h
+sh -c 'if test "chtype" = "cchar_t" ; then cat ../../ncurses-5.9/include/curses.wide >>curses.h ; fi'
+cat ../../ncurses-5.9/include/curses.tail >>curses.h
+sh ../../ncurses-5.9/include/MKhashsize.sh ../../ncurses-5.9/include/Caps >hashsize.h
+AWK=mawk sh ../../ncurses-5.9/include/MKncurses_def.sh ../../ncurses-5.9/include/ncurses_defs >ncurses_def.h
+AWK=mawk sh ../../ncurses-5.9/include/MKparametrized.sh ../../ncurses-5.9/include/Caps >parametrized.h
+touch config.h
+mawk -f MKterm.h.awk ../../ncurses-5.9/include/Caps > term.h
+sh ../../ncurses-5.9/include/edit_cfg.sh ../include/ncurses_cfg.h term.h
+** edit: HAVE_TCGETATTR 1
+** edit: HAVE_TERMIOS_H 1
+** edit: HAVE_TERMIO_H 1
+** edit: BROKEN_LINKER 0
+make: Leaving directory '/home/bert/build_qemu_images/clfs_cross_tools/system/mips64-64/sources/step_7_ncurses-5.9-build/include'
