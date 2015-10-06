@@ -65,7 +65,7 @@ based on the built cross-tools.
 the problem:
 ===================
 
-If building for alpha target the make [fails](clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out#L3776) in [step(17)](build_clfs_cross_tools.sh#L784-L785) with linking crti.o
+If building for alpha target the make [fails](clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out#L3776) in [step(17)](build_clfs_cross_tools.sh#L784-L850) with linking crti.o
 
 ===================
 My findings so far:
