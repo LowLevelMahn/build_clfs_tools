@@ -65,13 +65,13 @@ based on the built cross-tools.
 the problem:
 ===================
 
-If building for alpha target the script [fails](clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out#L3776) in step(17) with linking crti.o
+If building for alpha target the make [fails](clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out#L3776) in [step(17)](clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out#L784-L785) with linking crti.o
 
 ===================
 My findings so far:
 ===================
 
-The reason for the fail in step(17) is that the built gcc in step(15) got the wrong gcc search-dirs, whereas
+The reason for the fail in step(17) is that the built gcc in [step(15)](clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out#L671-L733) got the wrong gcc search-dirs, whereas
 sparc64-64/mips64-64 got the correct and equal gcc-search-dirs, but the alpha target differs in the last 4 paths.
 
 Logged gcc search-dirs:
