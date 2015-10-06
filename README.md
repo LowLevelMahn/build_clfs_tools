@@ -28,7 +28,7 @@ and creates some extra info files for searchdirs, paths etc.
 
 Every package is built out of Source-Tree and freshly extracted/removed in every step.
 
-The target configuration (build script line 35-70) is the only part of the script which is target specific.
+The target configuration ([build script line 35-70](build_clfs_cross_tools.sh#L35-70)) is the only part of the script which is target specific.
 The rest of the script only uses these variables, no target related ifs/switch-cases while configuring/building are present.
 
 This is the essence of the script:
