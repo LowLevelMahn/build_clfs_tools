@@ -1,5 +1,6 @@
-The github-repo https://github.com/LowLevelMahn/build_clfs_tools contains the scripts, files AND complete build-logs (so no need to run the script yourself) 
-separated for each step that i will use here as a "walkable" reference. I'll try to keep the github readme.md up to date if somethings changes.
+The github-repo https://github.com/LowLevelMahn/build_clfs_tools contains the scripts, files AND complete build-logs (so no need to run the script yourself)
+separated for each step that i will use here as a "walkable" reference. 
+The Repo Readme.MD better read/clickable then this long email. I'll try to keep the github readme.md up to date if somethings changes.
 
 ===================
 Goal
@@ -13,7 +14,7 @@ Using a ready-for-use-cross-development-toolkit is not an option for being CLFS 
 Work so far - the build-script
 ===================
 
-I’ve written a bash script https://github.com/LowLevelMahn/build_clfs_tools/build_clfs_cross_tools.sh (for being consistent in building for the different targets) 
+I’ve written a bash script https://github.com/LowLevelMahn/build_clfs_tools/blob/master/build_clfs_cross_tools.sh (for being consistent in building for the different targets) 
 that is doing the CLFS "5. Constructing Cross-Compile Tools" chapter.
 
 Its based on http://www.clfs.org/view/CLFS-3.0.0-SYSTEMD/sparc64-64/cross-tools/introduction.html and 
@@ -50,9 +51,9 @@ step(04) starting at line 299 in the build script
 * step(17): 5.15. Cross GCC-4.8.3 <-- alpha fails here
 
 build-logs: 
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/alpha/build_log
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/mips64-64/build_log
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/sparc64-64/build_log
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/alpha/build_log
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/mips64-64/build_log
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/sparc64-64/build_log
 
 ===================
 what is working:
@@ -66,7 +67,7 @@ the problem:
 ===================
 
 If building for alpha target the script fails in step(17) with linking crti.o
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out in line 3776
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/alpha/build_log/step_17_gcc-4.8.3/make.out in line 3776
 
 ===================
 My findings so far:
@@ -80,32 +81,32 @@ Logged gcc search-dirs:
 gcc_search_dirs.(diffable).out is generated in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh, line: 723/726
 
 better readable search-dirs
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out
 
 for being better diffable target replaced by {TARGET}, clfs_target replace by [CLFS_TARGET} etc.
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out
 
 logged c-runtime location:
 
 -the crti.o is the same in all target-folders - that seems correct
 
 crt-path.out is generated in step(16) Glibc-2.19, build_clfs_cross_tools.sh, line: 776
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/alpha/build_log/step_16_glibc-2.19/crt-path.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/mips64-64/build_log/step_16_glibc-2.19/crt-path.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/sparc64-64/build_log/step_16_glibc-2.19/crt-path.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/alpha/build_log/step_16_glibc-2.19/crt-path.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/mips64-64/build_log/step_16_glibc-2.19/crt-path.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/sparc64-64/build_log/step_16_glibc-2.19/crt-path.out
 
 logged ld SEARCHDIR:
 
 the ld searchpath is the same "/tools/lib" for all targets - that seems correct
 
 ld_SEARCHDIR.out is generated in step(14) Cross Binutils-2.24, build_clfs_cross_tools.sh, line: 626
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/alpha/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/mips64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/sparc64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/alpha/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/mips64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/system/sparc64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out
 
 the configure/make differences between the targets:
 
@@ -121,7 +122,7 @@ My suspicions so far :
 
 First idea: The also alpha targeting (but not supported) CLFS gcc patching does not "change" enough for alpha
 
-https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/files/gcc-4.8.3-pure64_specs-1.patch
+https://github.com/LowLevelMahn/build_clfs_tools/tree/master/clfs_cross_tools/files/gcc-4.8.3-pure64_specs-1.patch
 
 in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh
 
