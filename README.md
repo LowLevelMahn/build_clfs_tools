@@ -13,7 +13,7 @@ Using a ready-for-use-cross-development-toolkit is not an option for being CLFS 
 Work so far - the build-script
 ===================
 
-I've written a [bash script](build_clfs_cross_tools.sh) (for being homogen in building for the different targets) 
+I've written a [bash script](build_clfs_cross_tools.sh) (for being consistent in building for the different targets) 
 that is doing the CLFS "5. Constructing Cross-Compile Tools" chapter.
 
 Its based on http://www.clfs.org/view/CLFS-3.0.0-SYSTEMD/sparc64-64/cross-tools/introduction.html and 
