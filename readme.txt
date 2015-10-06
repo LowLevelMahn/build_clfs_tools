@@ -1,6 +1,5 @@
-This github-repo https://github.com/LowLevelMahn/build_clfs_tools contains the scripts, files AND complete build-logs (so no need to run the script yourself) 
-separated for each step that i will use here as a "walkable" reference. I’ll try to keep the 
-github readme.md up to date if somethings changes.
+The github-repo https://github.com/LowLevelMahn/build_clfs_tools contains the scripts, files AND complete build-logs (so no need to run the script yourself) 
+separated for each step that i will use here as a "walkable" reference. I'll try to keep the github readme.md up to date if somethings changes.
 
 ===================
 Goal
@@ -20,7 +19,7 @@ that is doing the CLFS "5. Constructing Cross-Compile Tools" chapter.
 Its based on http://www.clfs.org/view/CLFS-3.0.0-SYSTEMD/sparc64-64/cross-tools/introduction.html and 
 http://www.clfs.org/view/CLFS-3.0.0-SYSTEMD/mips64-64/cross-tools/introduction.html
 
-I’ve got extra follow up scripts for building kernel, bash, hello world etc. but I haven’t included them here to keep the problem report smaller.
+I've got extra follow up scripts for building kernel, bash, hello world etc. but I haven't included them here to keep the problem report smaller.
 
 The script needs sudo to add /tools and /cross-tools symbolic links to the root - the CLFS gcc patches are directing to them - but thats all
 
@@ -34,20 +33,21 @@ The rest of the script only uses these variables, no target related ifs/switch-c
 
 This is the essence of the script:
 
-step( 4): 5.2.  File-5.19 
-step( 5): 5.3.  Linux-3.14.21 Headers
-step( 6): 5.4.  M4-1.4.17
-step( 7): 5.5.  Ncurses-5.9
-step( 8): 5.6.  Pkg-config-lite-0.28-1
-step( 9): 5.7.  GMP-6.0.0
-step(10): 5.8.  MPFR-3.1.2
-step(11): 5.9.  MPC-1.0.2
-step(12): 5.10. ISL-0.12.2
-step(13): 5.11. CLooG-0.18.2
-step(14): 5.12. Cross Binutils-2.24
-step(15): 5.13. Cross GCC-4.8.3
-step(16): 5.14. Glibc-2.19
-step(17): 5.15. Cross GCC-4.8.3 <-- alpha fails here
+step(04) starting at line 299 in the build script
+* step( 4): 5.2.  File-5.19 
+* step( 5): 5.3.  Linux-3.14.21 Headers
+* step( 6): 5.4.  M4-1.4.17
+* step( 7): 5.5.  Ncurses-5.9
+* step( 8): 5.6.  Pkg-config-lite-0.28-1
+* step( 9): 5.7.  GMP-6.0.0
+* step(10): 5.8.  MPFR-3.1.2
+* step(11): 5.9.  MPC-1.0.2
+* step(12): 5.10. ISL-0.12.2
+* step(13): 5.11. CLooG-0.18.2
+* step(14): 5.12. Cross Binutils-2.24
+* step(15): 5.13. Cross GCC-4.8.3
+* step(16): 5.14. Glibc-2.19
+* step(17): 5.15. Cross GCC-4.8.3 <-- alpha fails here
 
 build-logs: 
 https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/system/alpha/build_log
@@ -124,12 +124,10 @@ First idea: The also alpha targeting (but not supported) CLFS gcc patching does 
 https://github.com/LowLevelMahn/build_clfs_tools/clfs_cross_tools/files/gcc-4.8.3-pure64_specs-1.patch
 
 in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh
-line 680:
-patch -Np1 -i "${FILES}/gcc-4.8.3-pure64_specs-1.patch" 
-line 683:
-echo -en '/n#undef STANDARD_STARTFILE_PREFIX_1/n#define STANDARD_STARTFILE_PREFIX_1 "/tools/lib/"/n' >> gcc/config/linux.h
-line 685:
-echo -en '/n#undef STANDARD_STARTFILE_PREFIX_2/n#define STANDARD_STARTFILE_PREFIX_2 ""/n' >> gcc/config/linux.h
+
+1. line 680: patch -Np1 -i "${FILES}/gcc-4.8.3-pure64_specs-1.patch" 
+2. line 683: echo -en '/n#undef STANDARD_STARTFILE_PREFIX_1/n#define STANDARD_STARTFILE_PREFIX_1 "/tools/lib/"/n' >> gcc/config/linux.h
+3. line 685: echo -en '/n#undef STANDARD_STARTFILE_PREFIX_2/n#define STANDARD_STARTFILE_PREFIX_2 ""/n' >> gcc/config/linux.h
 
 The patching only changes files in /gcc/config
 
