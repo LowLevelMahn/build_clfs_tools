@@ -122,11 +122,7 @@ First idea: The also alpha targeting (but not supported) CLFS gcc patching does 
 
 [gcc-4.8.3-pure64_specs-1.patch](clfs_cross_tools/files/gcc-4.8.3-pure64_specs-1.patch)
 
-in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh
-
-1. line 680: patch -Np1 -i "${FILES}/gcc-4.8.3-pure64_specs-1.patch" 
-2. line 683: echo -en '/n#undef STANDARD_STARTFILE_PREFIX_1/n#define STANDARD_STARTFILE_PREFIX_1 "/tools/lib/"/n' >> gcc/config/linux.h
-3. line 685: echo -en '/n#undef STANDARD_STARTFILE_PREFIX_2/n#define STANDARD_STARTFILE_PREFIX_2 ""/n' >> gcc/config/linux.h
+([gcc patching in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh in line: 680-685](build_clfs_cross_tools.sh#L680-L685))
 
 The patching only changes files in /gcc/config
 
