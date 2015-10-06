@@ -122,7 +122,7 @@ First idea: The also alpha targeting (but not supported) CLFS gcc patching does 
 
 [gcc-4.8.3-pure64_specs-1.patch](clfs_cross_tools/files/gcc-4.8.3-pure64_specs-1.patch)
 
-([gcc patching in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh in line: 680-685](build_clfs_cross_tools.sh#L680-L685))
+[gcc patching in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh in line: 680-685](build_clfs_cross_tools.sh#L680-L685)
 
 The patching only changes files in /gcc/config
 
