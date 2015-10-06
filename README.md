@@ -33,25 +33,25 @@ The rest of the script only uses these variables, no target related ifs/switch-c
 
 This is the essence of the script:
 
-*step( 4): 5.2.  File-5.19 
-*step( 5): 5.3.  Linux-3.14.21 Headers
-*step( 6): 5.4.  M4-1.4.17
-*step( 7): 5.5.  Ncurses-5.9
-*step( 8): 5.6.  Pkg-config-lite-0.28-1
-*step( 9): 5.7.  GMP-6.0.0
-*step(10): 5.8.  MPFR-3.1.2
-*step(11): 5.9.  MPC-1.0.2
-*step(12): 5.10. ISL-0.12.2
-*step(13): 5.11. CLooG-0.18.2
-*step(14): 5.12. Cross Binutils-2.24
-*step(15): 5.13. Cross GCC-4.8.3
-*step(16): 5.14. Glibc-2.19
-*step(17): 5.15. Cross GCC-4.8.3 <-- alpha fails here
+* step( 4): 5.2.  File-5.19 
+* step( 5): 5.3.  Linux-3.14.21 Headers
+* step( 6): 5.4.  M4-1.4.17
+* step( 7): 5.5.  Ncurses-5.9
+* step( 8): 5.6.  Pkg-config-lite-0.28-1
+* step( 9): 5.7.  GMP-6.0.0
+* step(10): 5.8.  MPFR-3.1.2
+* step(11): 5.9.  MPC-1.0.2
+* step(12): 5.10. ISL-0.12.2
+* step(13): 5.11. CLooG-0.18.2
+* step(14): 5.12. Cross Binutils-2.24
+* step(15): 5.13. Cross GCC-4.8.3
+* step(16): 5.14. Glibc-2.19
+* step(17): 5.15. Cross GCC-4.8.3 <-- alpha fails here
 
 build-logs: 
-*[alpha](build_clfs_tools/system/alpha/build_log)
-*[mips64-64](build_clfs_tools/system/mips64-64/build_log)
-*[sparc64-64](build_clfs_tools/system/sparc64-64/build_log)
+* [alpha](build_clfs_tools/system/alpha/build_log)
+* [mips64-64](build_clfs_tools/system/mips64-64/build_log)
+* [sparc64-64](build_clfs_tools/system/sparc64-64/build_log)
 
 ===================
 what is working:
@@ -78,32 +78,32 @@ Logged gcc search-dirs:
 gcc_search_dirs.(diffable).out is generated in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh, line: 723/726
 
 better readable search-dirs
-*[alpha](build_clfs_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out)
-*[mips64-64](build_clfs_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out)
-*[sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out)
+* [alpha](build_clfs_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out)
+* [mips64-64](build_clfs_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out)
+* [sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.out)
 
 for being better diffable target replaced by {TARGET}, clfs_target replace by [CLFS_TARGET} etc.
-*[alpha](build_clfs_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out)
-*[mips64-64](build_clfs_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out)
-*[sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out)
+* [alpha](build_clfs_tools/system/alpha/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out)
+* [mips64-64](build_clfs_tools/system/mips64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out)
+* [sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_15_gcc-4.8.3/gcc_search_dirs.diffable.out)
 
 logged c-runtime location:
 
 -the crti.o is the same in all target-folders - that seems correct
 
 crt-path.out is generated in step(16) Glibc-2.19, build_clfs_cross_tools.sh, line: 776
-*[alpha](build_clfs_tools/system/alpha/build_log/step_16_glibc-2.19/crt-path.out)
-*[mips64-64](build_clfs_tools/system/mips64-64/build_log/step_16_glibc-2.19/crt-path.out)
-*[sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_16_glibc-2.19/crt-path.out)
+* [alpha](build_clfs_tools/system/alpha/build_log/step_16_glibc-2.19/crt-path.out)
+* [mips64-64](build_clfs_tools/system/mips64-64/build_log/step_16_glibc-2.19/crt-path.out)
+* [sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_16_glibc-2.19/crt-path.out)
 
 logged ld SEARCHDIR:
 
 the ld searchpath is the same "/tools/lib" for all targets - that seems correct
 
 ld_SEARCHDIR.out is generated in step(14) Cross Binutils-2.24, build_clfs_cross_tools.sh, line: 626
-*[alpha](build_clfs_tools/system/alpha/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out)
-*[mips64-64](build_clfs_tools/system/mips64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out)
-*[sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out)
+* [alpha](build_clfs_tools/system/alpha/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out)
+* [mips64-64](build_clfs_tools/system/mips64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out)
+* [sparc64-64](build_clfs_tools/system/sparc64-64/build_log/step_14_binutils-2.24/ld_SEARCHDIR.out)
 
 the configure/make differences between the targets:
 
