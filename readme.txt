@@ -113,7 +113,7 @@ the configure/make differences between the targets:
 the mips64/sparc64/alpha Makefile/config.(status|log) for step(15) Cross GCC-4.8.3 are nearly equal for the targets
 and it doesn't seem that the gcc-search-dirs difference comes from here
 
-see folder https://github.com/LowLevelMahn/build_clfs_tools/step15_build_configure_logs_diffable
+see folder https://github.com/LowLevelMahn/build_clfs_tools/blob/master/step15_build_configure_logs_diffable
 for being better diffable the target replaced by {TARGET}, the clfs_target replace by [CLFS_TARGET} etc. so its easier to diff localy with the prefered tool
 
 ===================
@@ -132,7 +132,7 @@ in step(15) Cross GCC-4.8.3, build_clfs_cross_tools.sh
 
 The patching only changes files in /gcc/config
 
-I've copyied the original and patched /gcc/config tree into the https://github.com/LowLevelMahn/build_clfs_tools/gcc-4.8.3.patch.files folder - so its easier to diff localy with the prefered tool
+I've copyied the original and patched /gcc/config tree into the https://github.com/LowLevelMahn/build_clfs_tools/tree/master/gcc-4.8.3.patch.files folder - so its easier to diff localy with the prefered tool
 
 Second and better idea: 
 
