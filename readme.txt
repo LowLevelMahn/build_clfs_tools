@@ -1,6 +1,13 @@
 The github-repo https://github.com/LowLevelMahn/build_clfs_tools contains the scripts, files AND complete build-logs (so no need to run the script yourself)
-separated for each step that i will use here as a "walkable" reference. 
-The Repo Readme.MD better read/clickable then this long email. I'll try to keep the github readme.md up to date if somethings changes.
+separated for each step that i will use here as a "walkable" reference.
+The Repo Readme.MD better read/clickable then this long email. I'll try 
+to keep the github readme.md up to date if somethings changes.
+
+Short Story:
+
+i think i've found a configure bug in gcc while getting CFLS 3.0 alpha-dec ready
+
+Long Story:
 
 ===================
 Goal
