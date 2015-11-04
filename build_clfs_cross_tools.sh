@@ -23,6 +23,8 @@ readonly TARGET_SYSTEM_MIPS64_64=mips64-64
 # choose target to build !!!
 # =============================================================
 
+PARALLEL_MAKE_JOBS=5 # the old (cores + 1)
+
 TARGET_SYSTEM=$1
 # TARGET_SYSTEM=${TARGET_SYSTEM_SPARC64_64}
 
@@ -317,10 +319,10 @@ die_on_any_error 3
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 4
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 5
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 6
 
 rm -rf ${BUILD_DIR}
@@ -338,13 +340,13 @@ prepare_source_package linux-3.14.tar.xz
 xzcat "${FILES}/patch-3.14.21.xz" | patch -Np1 -i -
 die_on_any_error 0
 
-make mrproper 2>&1 | tee "${STEP_LOG_DIR}/make_mrproper.out"
+make -j"${PARALLEL_MAKE_JOBS}" mrproper 2>&1 | tee "${STEP_LOG_DIR}/make_mrproper.out"
 die_on_any_error 1
 
-make ARCH=${LINUX_ARCH} headers_check 2>&1 | tee "${STEP_LOG_DIR}/make_headers_check.out"
+make -j"${PARALLEL_MAKE_JOBS}" ARCH=${LINUX_ARCH} headers_check 2>&1 | tee "${STEP_LOG_DIR}/make_headers_check.out"
 die_on_any_error 2
 
-make ARCH=${LINUX_ARCH} INSTALL_HDR_PATH=/tools headers_install 2>&1 | tee "${STEP_LOG_DIR}/make_headers_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" ARCH=${LINUX_ARCH} INSTALL_HDR_PATH=/tools headers_install 2>&1 | tee "${STEP_LOG_DIR}/make_headers_install.out"
 die_on_any_error 3
 
 remove_source_package
@@ -371,10 +373,10 @@ die_on_any_error 3
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 4
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 5
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 6
 
 rm -rf ${BUILD_DIR}
@@ -407,10 +409,10 @@ die_on_any_error 4
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 5
 
-make -C include 2>&1 | tee "${STEP_LOG_DIR}/make_c_include.out"
+make -j"${PARALLEL_MAKE_JOBS}" -C include 2>&1 | tee "${STEP_LOG_DIR}/make_c_include.out"
 die_on_any_error 6
 
-make -C progs tic 2>&1 | tee "${STEP_LOG_DIR}/make_c_progs_tic.out"
+make -j"${PARALLEL_MAKE_JOBS}" -C progs tic 2>&1 | tee "${STEP_LOG_DIR}/make_c_progs_tic.out"
 die_on_any_error 7
 
 install -v -m755 progs/tic /cross-tools/bin
@@ -443,10 +445,10 @@ die_on_any_error 3
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 4
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 5
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 6
 
 rm -rf ${BUILD_DIR}
@@ -476,10 +478,10 @@ die_on_any_error 3
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 4
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 5
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 6
 
 rm -rf ${BUILD_DIR}
@@ -512,10 +514,10 @@ die_on_any_error 4
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 5
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 6
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 7
 
 rm -rf ${BUILD_DIR}
@@ -545,10 +547,10 @@ die_on_any_error 3
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 4
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 5
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 6
 
 rm -rf ${BUILD_DIR}
@@ -578,10 +580,10 @@ die_on_any_error 3
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 4
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 5
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 6
 
 rm -rf ${BUILD_DIR}
@@ -617,10 +619,10 @@ die_on_any_error 5
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 6
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 7
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 8
 
 rm -rf ${BUILD_DIR}
@@ -653,10 +655,10 @@ die_on_any_error 3
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 4
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 5
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 6
 
 "${CLFS_CROSS_TOOLS}/bin/${CLFS_TARGET}-ld" --verbose | grep SEARCH_DIR | tr -s ' ;' \\012 > "${STEP_LOG_DIR}/ld_SEARCHDIR.out"
@@ -714,10 +716,10 @@ die_on_any_error 8
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 9
 
-make all-gcc all-target-libgcc 2>&1 | tee "${STEP_LOG_DIR}/make_all_gcc_all_target_libgcc.out"
+make -j"${PARALLEL_MAKE_JOBS}" all-gcc all-target-libgcc 2>&1 | tee "${STEP_LOG_DIR}/make_all_gcc_all_target_libgcc.out"
 die_on_any_error 10
 
-make install-gcc install-target-libgcc 2>&1 | tee "${STEP_LOG_DIR}/make_install_gcc_install_libgcc.out"
+make -j"${PARALLEL_MAKE_JOBS}" install-gcc install-target-libgcc 2>&1 | tee "${STEP_LOG_DIR}/make_install_gcc_install_libgcc.out"
 die_on_any_error 11
 
 "${CLFS_CROSS_TOOLS}/bin/${CLFS_TARGET}-gcc" -print-search-dirs | sed '/^lib/b 1;d;:1;s,/[^/.][^/]*/\.\./,/,;t 1;s,:[^=]*=,:;,;s,;,;  ,g' | tr \; \\012 > "${STEP_LOG_DIR}/gcc_search_dirs.out"
@@ -767,10 +769,10 @@ die_on_any_error 6
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 7
 
-make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+make -j"${PARALLEL_MAKE_JOBS}" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 8
 
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 9
 
 find "${CLFS}/tools/lib" -name "crt*.o" > "${STEP_LOG_DIR}/crt-path.out"
@@ -826,10 +828,10 @@ die_on_any_error 8
 cp -r ${BUILD_DIR} ${STEP_LOG_DIR}
 die_on_any_error 9
 
-make AS_FOR_TARGET="${CLFS_TARGET}-as" \
+make -j"${PARALLEL_MAKE_JOBS}" AS_FOR_TARGET="${CLFS_TARGET}-as" \
 LD_FOR_TARGET="${CLFS_TARGET}-ld" 2>&1 | tee "${STEP_LOG_DIR}/make.out"
 die_on_any_error 10
-make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 11
 
 # make all-target-libstdc++-v3 2>&1 | tee "${STEP_LOG_DIR}/make_all_target_libstdc++-v3.out"
@@ -846,6 +848,70 @@ rm -rf ${BUILD_DIR}
 die_on_any_error 15
  
 remove_source_package
+# -------------------------------------------
+    ;;
+    18)
+# -------------------------------------------
+# bash
+# -------------------------------------------
+
+# -------------------------------------------------------------------
+# http://www.clfs.org/view/CLFS-3.0.0-SYSTEMD/sparc64-64/temp-system/variables.html
+
+# export is needed for sub-processes - export does not pollute the parent-process
+export CC="${CLFS_TARGET}-gcc ${BUILD64}"
+export CXX="${CLFS_TARGET}-g++ ${BUILD64}"
+export AR="${CLFS_TARGET}-ar"
+export AS="${CLFS_TARGET}-as"
+export RANLIB="${CLFS_TARGET}-ranlib"
+export LD="${CLFS_TARGET}-ld"
+export STRIP="${CLFS_TARGET}-strip"
+
+echo "CC: ${CC}"
+echo "CXX: ${CXX}"
+echo "AR: ${AR}"
+echo "AS: ${AS}"
+echo "RANLIB: ${RANLIB}"
+echo "LD: ${LD}"
+echo "STRIP: ${STRIP}"
+# -------------------------------------------------------------------
+
+prepare_source_package bash-4.3.tar.gz
+
+patch -Np1 -i ${FILES}/bash-4.3-branch_update-5.patch
+
+cat > config.cache << "EOF"
+ac_cv_func_mmap_fixed_mapped=yes
+ac_cv_func_strcoll_works=yes
+ac_cv_func_working_mktime=yes
+bash_cv_func_sigsetjmp=present
+bash_cv_getcwd_malloc=yes
+bash_cv_job_control_missing=present
+bash_cv_printf_a_format=yes
+bash_cv_sys_named_pipes=present
+bash_cv_ulimit_maxfds=yes
+bash_cv_under_sys_siglist=yes
+bash_cv_unusable_rtsigs=no
+gt_cv_int_divbyzero_sigfpe=yes
+EOF
+
+BUILD_DIR="../${STEP_PACKAGE_NAME}-build"
+rm -rf ${BUILD_DIR}
+die_on_any_error 5
+mkdir -vp ${BUILD_DIR}
+die_on_any_error 6
+
+cd ${BUILD_DIR}
+die_on_any_error 7
+
+../${PACKAGE_DIR}/configure --prefix=/tools \
+    --build=${CLFS_HOST} --host=${CLFS_TARGET} \
+    --without-bash-malloc --cache-file=config.cache
+
+make
+
+make install
+
 # -------------------------------------------
     ;;
   esac
